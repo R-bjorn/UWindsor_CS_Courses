@@ -1,0 +1,12 @@
+Script started on 2020-10-28 11:26:21-04:00 [TERM="xterm-256color" TTY="/dev/pts/10" COLUMNS="80" LINES="24"]
+]0;trive11w@alpha: ~/Desktop/COMP_2560/Midterm/Question 2[01;32mtrive11w@alpha[00m:[01;34m~/Desktop/COMP_2560/Midterm/Question 2[00m$ gcc que2.c
+]0;trive11w@alpha: ~/Desktop/COMP_2560/Midterm/Question 2[01;32mtrive11w@alpha[00m:[01;34m~/Desktop/COMP_2560/Midterm/Question 2[00m$ ./a.out
+I am the parent process, my pid = 16900
+.I am a child process, my parent id = 16900, my pid = 16901
+..I am a child process, my parent id = 16900, my pid = 16902
+...I am a child process, my parent id = 16900, my pid = 16904
+....I am a child process, my parent id = 16902, my pid = 16907
+]0;trive11w@alpha: ~/Desktop/COMP_2560/Midterm/Question 2[01;32mtrive11w@alpha[00m:[01;34m~/Desktop/COMP_2560/Midterm/Question 2[00m$ exit
+exit
+
+Script done on 2020-10-28 11:26:31-04:00 [COMMAND_EXIT_CODE="0"]
