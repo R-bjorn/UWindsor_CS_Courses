@@ -1,0 +1,22 @@
+Script started on 2020-11-28 16:38:01-05:00 [TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="80" LINES="24"]
+]0;trive11w@alpha: ~/Desktop[01;32mtrive11w@alpha[00m:[01;34m~/Desktop[00m$ gcc que2.c -o que2
+]0;trive11w@alpha: ~/Desktop[01;32mtrive11w@alpha[00m:[01;34m~/Desktop[00m$ ./que2
+1
+2
+Send SIGSTOP to child
+Send SIGCONT to child
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+Send SIGTERM to child
+]0;trive11w@alpha: ~/Desktop[01;32mtrive11w@alpha[00m:[01;34m~/Desktop[00m$ exit
+exit
+
+Script done on 2020-11-28 16:38:26-05:00 [COMMAND_EXIT_CODE="0"]

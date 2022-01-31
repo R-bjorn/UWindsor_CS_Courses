@@ -1,0 +1,5 @@
+In the copy.c file.. there are some bugs that needs to be fixed. 
+also when reading the file, it was 512 bytes which was out of bound for buffer char array. 
+when writing, the code should only write n1 bytes, but the previous code had 100. that was also the problem.
+and in the while loop, when the curser was at the end of the file, it reads some garbage values. 
+that's why i used do while loop.

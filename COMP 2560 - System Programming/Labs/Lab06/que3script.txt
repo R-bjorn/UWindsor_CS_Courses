@@ -1,0 +1,29 @@
+Script started on 2020-11-15 22:50:53-05:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="80" LINES="24"]
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Labs/Lab06[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Labs/Lab06[00m$ ./a.outgcc lab07.c[4P./a.outgcc lab07.c[4P./a.out[K[K[K[K[K[K[Kgcc main_smallsh.c proc_lin.c r uncommand.c sa[K[Kuserin.c
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Labs/Lab06[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Labs/Lab06[00m$ gcc main_smallsh.c proc_lin.c runcommand.c userin.c -o executiv[K[Ke_file
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Labs/Lab06[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Labs/Lab06[00m$ ls
+[0m[01;32ma.out[0m         main_smallsh.c  proc_lin.c    scriptfile.txt  timefile.t
+[01;32mexecute_file[0m  P2Q1.c          runcommand.c  smallsh.h       userin.c
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Labs/Lab06[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Labs/Lab06[00m$ exe[K[K[K./execute_file
+Command> 	ls  	-l	-t
+arg[narg=0]=ls
+arg[narg=1]=-l
+arg[narg=2]=-t
+arg[narg=3]=
+
+total 46
+-rwxr-xr-x 1 trive11w temp 17448 Nov 15 22:51 execute_file
+-rwxr-xr-x 1 trive11w temp 17448 Nov 15 22:51 a.out
+-rw-r--r-- 1 trive11w temp     0 Nov 15 22:50 timefile.t
+-rw-r--r-- 1 trive11w temp     0 Nov 15 22:50 scriptfile.txt
+-rw-r--r-- 1 trive11w temp   944 Nov 15 22:42 runcommand.c
+-rw-r--r-- 1 trive11w temp   712 Nov 15 22:14 proc_lin.c
+-rw-r--r-- 1 trive11w temp  1163 Nov 15 22:13 userin.c
+-rw-r--r-- 1 trive11w temp   156 Nov 15 21:45 main_smallsh.c
+-rw-r--r-- 1 trive11w temp   294 Nov 15 21:30 smallsh.h
+-rw-r--r-- 1 trive11w temp   800 Nov 10 12:36 P2Q1.c
+Command> ^C
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Labs/Lab06[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Labs/Lab06[00m$ exit
+exit
+
+Script done on 2020-11-15 22:52:20-05:00 [COMMAND_EXIT_CODE="130"]
