@@ -1,0 +1,100 @@
+Script started on 2020-11-21 17:52:28-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="173" LINES="43"]
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A4[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A4[00m$ gcc que3.c -o que3
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A4[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A4[00m$ ./que3
+>>>>>miniminishell cat openfile.c ls -t ps
+
+arg[0] : 'cat'
+arg[1] : 'openfile.c'
+
+cat: openfile.c: No such file or directory
+
+arg[0] : 'ls'
+arg[1] : '-t'
+
+que3  que3time.t  que3script.txt  que3.c  que1script.txt  que1time.t  que1.c
+
+arg[0] : 'ps'
+  PID TTY          TIME CMD
+ 6239 pts/24   00:00:00 bash
+ 6355 pts/24   00:00:00 que3
+ 6426 pts/24   00:00:00 ps
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A4[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A4[00m$ ./que3
+>>>>>miniminishell cat que3.c ls -t ps
+
+arg[0] : 'cat'
+arg[1] : 'que3.c'
+
+#include <stdio.h>
+#include <sys/wait.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+
+#define BUF 20
+#define MAX 512
+char *promt = ">>>>>miniminishell ";
+
+int main()
+{
+    char input[MAX];
+    char *inp;
+    
+    printf("%s",promt);
+    scanf("%[^\n]",input);      // Parallal Input Stored in input array
+    int len = strlen(input);
+    input[len] = '\0';
+    inp = input;
+    int num = 0;
+    while(*inp != '\0'){
+        char argv[BUF] = {}, cmdv[BUF] = {};
+        char *arg[MAX+1];
+        int count = 0;
+        int i = 0 , j = 0;
+        while(1 && *inp!= '\0'){
+            if(*inp != ' ' && *inp != '\0'){
+                if(count == 0){
+                    argv[i++] = *inp++; 
+                }else{
+                    cmdv[j++] = *inp++;
+                }
+            }else{
+                *inp++;
+                if(++count == 2){
+                    break;
+                }
+                sleep(1);
+            }
+        }
+        
+        pid_t pid = fork();
+        if(pid == 0){       // Child Process
+            alarm(3);
+            arg[num++] = argv;
+            printf("\narg[0] : '%s'\n",arg[0]);
+            if(j != 0){
+                arg[num++] = cmdv;       
+                printf("arg[1] : '%s'\n\n",arg[1]);
+            }
+            arg[num] = NULL;
+            execvp(arg[0],arg);  
+        }else{
+            wait(NULL);
+        }
+        
+    }
+}
+
+arg[0] : 'ls'
+arg[1] : '-t'
+
+que3  que3time.t  que3script.txt  que3.c  que1script.txt  que1time.t  que1.c
+
+arg[0] : 'ps'
+  PID TTY          TIME CMD
+ 6239 pts/24   00:00:00 bash
+ 6444 pts/24   00:00:00 que3
+ 6541 pts/24   00:00:00 ps
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A4[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A4[00m$ exit
+exit
+
+Script done on 2020-11-21 17:53:07-05:00 [COMMAND_EXIT_CODE="0"]

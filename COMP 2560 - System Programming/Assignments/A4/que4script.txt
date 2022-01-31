@@ -1,0 +1,150 @@
+Script started on 2020-11-22 17:06:34-05:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="99" LINES="24"]
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn/A4[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn/A4[00m$ gdb --tui a[4@cc -g a.c -o[C[C[4Pdb --tui[C[C[Kgdb --tui a[4@cc -g a.c -o[C[C[4Pdb --tui[C[C[4@cc -g a.c -o[C[C[4Pdb --tui[C[C[Kgcc main_smallsh.c userin.c proc_lin.c c[Krumcommand.c - o que4
+[01m[Kgcc:[m[K [01;31m[Kerror: [m[Krumcommand.c: No such file or directory
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn/A4[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn/A4[00m$ gcc main_smallsh.c userin.c proc_lin.c rumcommand.c -o que4[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommand.c -o [1Pque4[A]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn/A4[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn/A4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cncommand.c -o que4[A]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn/A4[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn/A4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn/A4[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn/A4[00m$ ./que4
+Command> ls -t -l
+arg[0]>ls
+arg[1]>-t
+arg[2]>-l
+arg[3]>(null)
+total 59
+-rwxr-xr-x 1 trive11w temp 17576 Nov 22 17:07 que4
+-rw-r--r-- 1 trive11w temp     0 Nov 22 17:06 que4time.t
+-rw-r--r-- 1 trive11w temp     0 Nov 22 17:06 que4script.c
+-rwxr-xr-x 1 trive11w temp 17576 Nov 22 17:06 a.out
+-rw-r--r-- 1 trive11w temp   965 Nov 22 17:04 runcommand.c
+-rw-r--r-- 1 trive11w temp  2450 Nov 22 17:04 userin.c
+-rw-r--r-- 1 trive11w temp   932 Nov 22 15:53 proc_lin.c
+-rw-r--r-- 1 trive11w temp  2067 Nov 21 18:06 que3.c
+-rw-r--r-- 1 trive11w temp  2858 Nov 21 17:53 que3script.txt
+-rw-r--r-- 1 trive11w temp  1271 Nov 21 17:53 que3time.t
+-rw-r--r-- 1 trive11w temp   872 Nov 21 14:12 que1script.txt
+-rw-r--r-- 1 trive11w temp   583 Nov 21 14:12 que1time.t
+-rw-r--r-- 1 trive11w temp  1239 Nov 21 14:11 que1.c
+-rw-r--r-- 1 trive11w temp   156 Nov 15 21:45 main_smallsh.c
+-rw-r--r-- 1 trive11w temp   294 Nov 15 21:30 smallsh.h
+Command> ls -t
+arg[0]>ls
+arg[1]>-t
+arg[2]>(null)
+que4	      a.out	    proc_lin.c	    que3time.t	    que1.c
+que4time.t    runcommand.c  que3.c	    que1script.txt  main_smallsh.c
+que4script.c  userin.c	    que3script.txt  que1time.t	    smallsh.h
+Command> cat userin.c
+arg[0]>cat
+arg[1]>userin.c
+arg[2]>(null)
+/*
+ * Name : Ravi Trivedi
+ * St. No: 105197609
+ * */
+
+#include "smallsh.h"
+#include <stdlib.h>
+#include <string.h>
+
+// removed the tokbuf[] ...
+static char inpbuf[MAXBUF],*ptr = inpbuf;
+char *tok;
+
+char del[] = " ";       // Space char*
+int number = 0;
+
+int inarg(char c);
+
+int userin(char *p)
+{
+    number = 0 ;        // Resetting number
+    int c, count;
+    ptr = inpbuf;
+
+    printf("%s", p);
+    count = 0;
+    while (1)
+    {
+        if ((c = getchar()) == EOF)
+            return(EOF);
+        if (count < MAXBUF)
+            inpbuf[count++] = c;
+        if (c == '\n' && count < MAXBUF)
+        {
+            inpbuf[count] = '\0';
+            return count;
+        }
+
+        if (c == '\n')
+        {
+            printf("smallsh: input line too long\n");
+            count = 0;
+            printf("%s ", p);
+        }
+    }
+}
+
+/* In order to get the token, I used strtok function from string.h ... 
+ * First, I created a char array same as inpbuf to make a copy of inpbuf to temp...
+ * Then I used strtok to split all the white spaces from the temp and get the token. 
+ * I used inpbuf to keep track of type. 
+ * number is used for the first time, we need to make a copy of inpbuf, that should only happen one time, the second time, it should use NULL parameter in the strtok, that's why i used number variable
+ * Continue to runcommand.c ...
+ * */ 
+
+
+int gettok(char **outptr)
+{
+    int type;
+
+    if (number++ == 0){
+        char temp[MAXBUF];  // Making a copy of input array to this new temp array
+        strcpy(temp,inpbuf);
+        tok = strtok(temp,"\n");    //Removing last \n
+        tok = strtok(temp,del);     //Removing all the spaces
+    }else{
+        tok = strtok(NULL,del);
+    }
+    *outptr = tok;
+
+    while (*ptr == ' ' || *ptr == '\t') {
+        ptr++;
+    }
+
+    switch (*ptr++) {
+        case '\n':
+            type = EOL;
+            break;
+        case '&':
+            type = AMPERSAND;
+            break;
+        case ';':
+            type = SEMICOLON;
+            break;
+        default:
+            type = ARG;
+
+            while (inarg(*ptr)) {
+                *ptr++;
+            }
+    }
+    return type;
+}
+
+//****************************************************************************************
+static char special[] = { ' ', '\t', '&', ';', '\n', '\0' };
+int inarg(char c)
+{
+    char *wrk;
+    for (wrk = special; *wrk; wrk++)
+    {
+        if (c == *wrk)
+            return (0);
+    }
+    return (1);
+}
+
+Command> ^C
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn/A4[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn/A4[00m$ exit
+exit
+
+Script done on 2020-11-22 17:07:48-05:00 [COMMAND_EXIT_CODE="130"]

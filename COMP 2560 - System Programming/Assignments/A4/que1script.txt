@@ -1,0 +1,12 @@
+Script started on 2020-11-21 14:12:15-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A4[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A4[00m$ ls
+a.txt  que1.c  que1script.txt  que1time.t
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A4[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A4[00m$ gc [Kc que1.c -o que1
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A4[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A4[00m$ ./auq1[K[K[K[Kque1
+Parent Process: Hello
+My Child must have closed the file... Lets try reading from file
+Parent Process: Parent
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A4[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A4[00m$ exit
+exit
+
+Script done on 2020-11-21 14:12:45-05:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,22 @@
+Script started on 2020-11-07 13:25:02-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+]0;trive11w@bravo: ~/Desktop/COMP_2560/A3[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/A3[00m$ ls
+a3script.txt  a3time.t  [0m[01;32mAsgn_03[0m  main.c
+]0;trive11w@bravo: ~/Desktop/COMP_2560/A3[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/A3[00m$ gcc main [K.c -o Asgn_[K[K[K[K02[K3
+]0;trive11w@bravo: ~/Desktop/COMP_2560/A3[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/A3[00m$ ./A03
+Enter an arithmetic statement, e.g., 34 + 132 > 1+2>
+Created a child to make your operation, waiting
+I am a child working for my parent
+1 + 2 = 3
+Enter an arithmetic statement, e.g., 34 + 132 > 1/0>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Division by 0
+Enter an arithmetic statement, e.g., 34 + 132 > 1 20 1>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong operator
+Enter an arithmetic statement, e.g., 34 + 132 > ^C
+]0;trive11w@bravo: ~/Desktop/COMP_2560/A3[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/A3[00m$ exit
+exit
+
+Script done on 2020-11-07 13:25:54-05:00 [COMMAND_EXIT_CODE="130"]

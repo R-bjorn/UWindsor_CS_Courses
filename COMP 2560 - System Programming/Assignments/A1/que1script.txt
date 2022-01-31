@@ -1,0 +1,10 @@
+Script started on 2020-10-09 11:10:45-04:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="99" LINES="24"]
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn_1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn_1[00m$ gcc que1.c -o que1
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn_1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn_1[00m$ ./que1
+File Size : 16
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn_1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn_1[00m$ more r[Kque1read.txt
+Hello from file
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn_1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn_1[00m$ exit
+exit
+
+Script done on 2020-10-09 11:11:11-04:00 [COMMAND_EXIT_CODE="0"]
