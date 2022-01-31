@@ -1,0 +1,45 @@
+Script started on 2020-10-27 12:57:08-04:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="105" LINES="24"]
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Midterm/Question 1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Midterm/Question 1[00m$ gcc Que1.c
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Midterm/Question 1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Midterm/Question 1[00m$ ./a.out
+Floating Points from File : 
+12.6
+45.6
+4.0
+5.0
+6.0
+34.5
+
+7
+
+
+
+,
+
+7
+
+
+
+,
+
+7
+
+
+
+,
+
+7
+
+
+
+,
+
+7
+
+
+
+,
+ÿ
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Midterm/Question 1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Midterm/Question 1[00m$ ec[Kxit
+exit
+
+Script done on 2020-10-27 12:57:19-04:00 [COMMAND_EXIT_CODE="0"]

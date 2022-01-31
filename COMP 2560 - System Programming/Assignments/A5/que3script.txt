@@ -1,0 +1,30 @@
+Script started on 2020-11-30 13:07:09-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="78" LINES="24"]
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A5[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A5[00m$ gcc que3.c -o pipeexec
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A5[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A5[00m$ ls
+[0m[01;32ma.out[0m     que1.c          que1time.t  que3script.txt  result.txt
+[01;32mpipeexec[0m  que1script.txt  que3.c      que3time.t
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A5[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A5[00m$ pipie[K[Keexec s[Kls
+bash: pipeexec: command not found
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A5[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A5[00m$ ./pipeexec ls
+The result of ls is written into result.txt with total 101 bytes.
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A5[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A5[00m$ more result.txt
+a.out
+pipeexec
+que1.c
+que1script.txt
+que1time.t
+que3.c
+que3script.txt
+que3time.t
+result.txt
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A5[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A5[00m$ ./pipeexec uname
+The result of uname is written into result.txt with total 7 bytes.
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A5[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A5[00m$ more result.txt
+Linux
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A5[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A5[00m$ od -c result.txt
+0000000   L   i   n   u   x  \n
+0000006
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A5[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A5[00m$ ei[Kxit
+exit
+
+Script done on 2020-11-30 13:08:34-05:00 [COMMAND_EXIT_CODE="0"]

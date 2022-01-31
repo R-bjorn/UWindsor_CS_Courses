@@ -1,0 +1,9 @@
+I added the print statement in a for loop inside runcommand.c .. 
+because thats's where we are using execvp that prints all the info about the file. 
+
+And the reason why I added the print statement there is because we are using execvp 
+and as we discussed in about execvp and all the exec functions that execvp needs two parameters 
+first is filename and second is an array of char which includes all the commands.
+So I used a for loop to print all that array of char data because i know that execvp has 
+cline as a second parameter and cline is a char array. so it contains all the command data.
+

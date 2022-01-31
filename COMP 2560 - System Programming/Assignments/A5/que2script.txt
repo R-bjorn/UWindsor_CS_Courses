@@ -1,0 +1,17 @@
+Script started on 2020-12-01 14:28:46-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="122" LINES="29"]
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A5[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A5[00m$ gcc que2c[K.c-o [K[K[K -o randomNUmbers[K[K[K[K[K[Kumbers
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A5[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A5[00m$ ./randomNumbers
+Random Number  1 : 83
+Random Number  2 : 86
+Random Number  3 : 77
+Random Number  4 : 15
+Random Number  5 : 93
+Random Number  6 : 83
+Random Number  7 : 86
+Random Number  8 : 77
+Random Number  9 : 15
+Random Number 10 : 93
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn/A5[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn/A5[00m$ exit
+exit
+
+Script done on 2020-12-01 14:29:09-05:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,96 @@
+Script started on 2020-10-25 23:04:41-04:00 [TERM="xterm-256color" TTY="/dev/pts/12" COLUMNS="96" LINES="32"]
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn_2[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn_2[00m$ gcc que4.c 
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn_2[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn_2[00m$ ./a.out que4file.txt fileOut.txt
+fileSize=0
+fileSize=1
+fileSize=2
+fileSize=3
+fileSize=4
+fileSize=5
+fileSize=6
+fileSize=7
+fileSize=8
+fileSize=9
+fileSize=10
+fileSize=11
+fileSize=12
+fileSize=13
+fileSize=14
+fileSize=15
+fileSize=16
+fileSize=17
+fileSize=18
+fileSize=19
+fileSize=20
+fileSize=21
+fileSize=22
+fileSize=23
+fileSize=24
+fileSize=25
+fileSize=26
+fileSize=27
+fileSize=28
+fileSize=29
+fileSize=30
+fileSize=31
+fileSize=32
+fileSize=33
+fileSize=34
+fileSize=35
+fileSize=36
+fileSize=37
+fileSize=38
+fileSize=39
+fileSize=40
+fileSize=41
+fileSize=42
+fileSize=43
+fileSize=44
+fileSize=45
+fileSize=46
+fileSize=47
+fileSize=48
+fileSize=49
+fileSize=50
+fileSize=51
+fileSize=52
+fileSize=53
+fileSize=54
+fileSize=55
+fileSize=56
+fileSize=57
+fileSize=58
+fileSize=59
+fileSize=60
+fileSize=61
+fileSize=62
+fileSize=63
+fileSize=64
+fileSize=65
+fileSize=66
+fileSize=67
+fileSize=68
+fileSize=69
+fileSize=70
+fileSize=71
+fileSize=72
+fileSize=73
+fileSize=74
+fileSize=75
+fileSize=76
+fileSize=77
+fileSize=78
+fileSize=79
+Size of a.txt is 79
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn_2[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn_2[00m$ more que4file.txt
+@#$^asdhasjdksad02932103921
+#@#$@#$ dasdsda  asdsa d ads 
+ asd a 
+a a 
+ a
+  
+0
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn_2[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn_2[00m$ exit
+exit
+
+Script done on 2020-10-25 23:05:24-04:00 [COMMAND_EXIT_CODE="0"]

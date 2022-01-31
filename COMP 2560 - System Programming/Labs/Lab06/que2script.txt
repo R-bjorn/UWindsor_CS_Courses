@@ -1,0 +1,15 @@
+Script started on 2020-11-15 23:20:15-05:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="80" LINES="24"]
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Labs/Lab06[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Labs/Lab06[00m$ gcc lab06.c -o lab06
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Labs/Lab06[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Labs/Lab06[00m$ ./lab06
+ I am the parent process, my pid =  28668 
+. I am a child process, parent pid = 28668, my pid = 28669 
+. I am a child process, my parent pid = 28669, my pid = 28670 
+... I am a child process, parent pid = 28668, my pid = 28695 
+. I am a child process, my parent pid = 28695, my pid = 28696 
+...
+
+
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Labs/Lab06[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Labs/Lab06[00m$ exit
+exit
+
+Script done on 2020-11-15 23:20:34-05:00 [COMMAND_EXIT_CODE="0"]

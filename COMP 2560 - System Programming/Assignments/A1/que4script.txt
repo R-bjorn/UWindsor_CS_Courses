@@ -1,0 +1,18 @@
+Script started on 2020-10-09 11:44:06-04:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="99" LINES="44"]
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn_1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn_1[00m$ gcc qur[Ke4.c -o que4
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn_1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn_1[00m$ ./que4
+Enter File Name : que4read.txt
+Hello!! This is File.
+
+What Information you want to append in que4read.txt file : Bye file.
+Hello!! This is File.
+
+Bye file
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn_1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn_1[00m$ exit[K[K[K[Kmore que4read.txt
+Hello!! This is File.
+
+Bye file
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn_1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn_1[00m$ exit
+exit
+
+Script done on 2020-10-09 11:44:48-04:00 [COMMAND_EXIT_CODE="0"]

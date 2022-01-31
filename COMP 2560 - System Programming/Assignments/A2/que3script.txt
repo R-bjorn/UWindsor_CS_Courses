@@ -1,0 +1,13 @@
+Script started on 2020-10-25 22:52:50-04:00 [TERM="xterm-256color" TTY="/dev/pts/12" COLUMNS="96" LINES="32"]
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn_2[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn_2[00m$ gcc que3.x[Kc -o reverseFile
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn_2[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn_2[00m$ ./reverseFile que3file.txt fileOut.txt
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn_2[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn_2[00m$ more fileOut.txt
+This is line 5
+This is line 4
+This is line 3
+This is line 2
+This is line 1
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Asgn_2[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Asgn_2[00m$ exit
+exit
+
+Script done on 2020-10-25 22:53:16-04:00 [COMMAND_EXIT_CODE="0"]

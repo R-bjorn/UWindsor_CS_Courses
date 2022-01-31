@@ -1,0 +1,538 @@
+Script started on 2020-10-04 16:57:51-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="173" LINES="43"]
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Lab02[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Lab02[00m$ gcc -g copy.c -o copy
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Lab02[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Lab02[00m$ gdb -tui[K[K[K-tui copy
+[?1049h[22;0;0t[1;43r(B[m[4l[?7h[?1h=[H[2J[29d(B[0;7mNone No process In:                                                                                                                                             L??   PC: ?? [30;1H(B[m[H   (0[0mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk(B[2;4H(0[0mx(B[173G(0[0mx(B[3;4H(0[0mx(B[173G(0[0mx(B[4;4H(0[0mx(B[173G(0[0mx(B[5;4H(0[0mx(B[173G(0[0mx(B[6;4H(0[0mx(B[173G(0[0mx(B[7;4H(0[0mx(B[173G(0[0mx(B[8;4H(0[0mx(B[173G(0[0mx(B[9;4H(0[0mx(B[173G(0[0mx(B[10;4H(0[0mx(B[173G(0[0mx(B[11;4H(0[0mx(B[173G(0[0mx(B[12;4H(0[0mx(B[173G(0[0mx(B[13;4H(0[0mx(B[173G(0[0mx(B[14;4H(0[0mx(B[173G(0[0mx(B[15;4H(0[0mx(B[173G(0[0mx(B[16;4H(0[0mx(B[173G(0[0mx(B[17;4H(0[0mx(B[173G(0[0mx(B[18;4H(0[0mx(B[173G(0[0mx(B[19;4H(0[0mx(B[173G(0[0mx(B[20;4H(0[0mx(B[173G(0[0mx(B[21;4H(0[0mx(B[173G(0[0mx(B[22;4H(0[0mx(B[173G(0[0mx(B[23;4H(0[0mx(B[173G(0[0mx(B[24;4H(0[0mx(B[173G(0[0mx(B[25;4H(0[0mx(B[173G(0[0mx(B[26;4H(0[0mx(B[173G(0[0mx(B[27;4H(0[0mx(B[173G(0[0mx(B[28;4H(0[0mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj(B[1;4H(0[0m(B[15;65H[ No Source Available ][15;65H[23X[H   [15;65H[ No Source Available ][H[15;88H[?1h=[30d[H[2J   (0[0mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk(B[2;4H(0[0mx(B[173G(0[0mx(B[3;4H(0[0mx(B[173G(0[0mx(B[4;4H(0[0mx(B[173G(0[0mx(B[5;4H(0[0mx(B[173G(0[0mx(B[6;4H(0[0mx(B[173G(0[0mx(B[7;4H(0[0mx(B[173G(0[0mx(B[8;4H(0[0mx(B[173G(0[0mx(B[9;4H(0[0mx(B[173G(0[0mx(B[10;4H(0[0mx(B[173G(0[0mx(B[11;4H(0[0mx(B[173G(0[0mx(B[12;4H(0[0mx(B[173G(0[0mx(B[13;4H(0[0mx(B[173G(0[0mx(B[14;4H(0[0mx(B[173G(0[0mx(B[15;4H(0[0mx(B[15;65H(0[0m(B[ No Source Available ][173G(0[0mx(B[16;4H(0[0mx(B[173G(0[0mx(B[17;4H(0[0mx(B[173G(0[0mx(B[18;4H(0[0mx(B[173G(0[0mx(B[19;4H(0[0mx(B[173G(0[0mx(B[20;4H(0[0mx(B[173G(0[0mx(B[21;4H(0[0mx(B[173G(0[0mx(B[22;4H(0[0mx(B[173G(0[0mx(B[23;4H(0[0mx(B[173G(0[0mx(B[24;4H(0[0mx(B[173G(0[0mx(B[25;4H(0[0mx(B[173G(0[0mx(B[26;4H(0[0mx(B[173G(0[0mx(B[27;4H(0[0mx(B[173G(0[0mx(B[28;4H(0[0mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj(B[29;1H(0[0m(B[0;7mNone No process In:                                                                                                                                             L??   PC: ?? [1;1H(B[m[15;88H[29d[H   (0[0;1;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk(B(B[m[2;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[3;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[4;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[5;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[6;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[7;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[8;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[9;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[10;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[11;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[12;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[13;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[14;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[15;4H(0[0;1;7mx(B(B[m[15;65H(0[0;1;7m(B(B[m[23X[173G(0[0;1;7mx(B(B[m[16;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[17;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[18;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[19;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[20;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[21;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[22;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[23;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[24;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[25;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[26;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[27;4H(0[0;1;7mx(B(B[m[173G(0[0;1;7mx(B(B[m[28;4H(0[0;1;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj(B(B[m[1;4H(0[0;1;7m(B(B[m[15;65H[ No Source Available ][H[30dGNU gdb (Debian 8.2.1-2+b3) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+[5G<http://www.gnu.org/software/gdb/documentation/>.
+
+--Type <RET> for more, q to quit, c to continue without paging--[30d[3M[41dFor help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from copy...[30d[M[42;29Hdone.
+[1;7H(B[0;1;7mcopy.c
+[5G(B[m6[13Gint main(int argc, char *argv[]){
+[5G7[3;14Hint fd1, fd2;
+[5G8[4;14Hchar buffer[100];
+[5G9[5;14Hlong int n1, n2;
+[5G10[14Gif(((fd1 = open(argv[1], O_RDONLY)) == -1) ||  ((fd2 = open(argv[2],
+[5G11[7;20HO_CREAT|O_WRONLY|O_TRUNC,0700)) == -1)){
+[5G12[8;18Hperror("file problem ");
+[5G13[9;18Hexit(1);
+[5G14[14G}
+[5G15[14Gdo{
+[5G16[12;19Hn2 = write(fd2, buffer, n1);
+[5G17[13;19Hif(n1 == -1){
+[5G18[14;26Hperror("Reading problem ");
+[5G19[15;26Hexit(2);[15;65H[23X
+[5G20[16;19H}
+[5G21[17;19Hif(n2 != n1){
+[5G22[18;26Hperror("writing problem ");
+[5G23[19;26Hexit(3);
+[5G24[20;20H}
+[5G25[13G}while((n1=read(fd1, buffer, 100)) > 0);
+[5G26[13G// Case of an error exit from the loop
+[5G27[23;15Hclose(fd1);
+[5G28[24;15Hclose(fd2);
+[5G29[25;15Hexit(0);
+[5G30[13G}
+[5G31[1;13H[28d
+(B[0;7mexec
+(B[m[1;13H[28d
+
+[43d(gdb) b 15[H[12db+[28d
+
+[2M[42dBreakpoint 1 at 0x120a: file copy.c, line 16.
+(gdb) p fd1[30d[M[43dNo symbol "fd1" in current context.[30d[M[43d(gdb) r copy.c copy.bak[30d[2M[42dStarting program: /home/trive11w/Desktop/COMP_2560/Lab02/copy copy.c copy.bak
+[1;13H[12d  [H[12db+[28d
+(B[0;7mnative process 15443 In:
+(B[m[43d[1;13H[12d  [H[12db+[28d
+
+[43d[1;13H[12d  [H[12db+[28d
+
+[43d[12d  [H[12dB+[28d
+
+[2M[42dBreakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+[29;26H(B[0;7mmain[29;149HL16   PC: 0x55555555520a
+(B[m[12;5H(B[0;7m16            n2 = write(fd2, buffer, n1); [173G(B[m  [H[12dB+>[28d[43d(gdb) p fd1[30d[M[43d$1 = 3[30d[M[43d(gdb) p fd2[30d[M[43d$2 = 4[30d[M[43d(gdb) n[30d[M[43d[29;151H(B[0;7m7[171G23
+(B[m[12;5H16            n2 = write(fd2, buffer, n1); 
+[5G(B[0;7m17            if(n1 == -1){[173G(B[m[A   [H[12dB+
+>[28d[43d(gdb) n[30d[M[43d[29;150H(B[0;7m21[171G40
+(B[m[13;5H17            if(n1 == -1){[17;5H(B[0;7m21            if(n2 != n1){[173G(B[m[12d  
+ [H[12dB+[17d>[28d[43d(gdb) n[30d[M[43d[29;151H(B[0;7m5[171G6
+(B[m[17;5H21            if(n2 != n1){[21;5H(B[0;7m25      }while((n1=read(fd1, buffer, 100)) > 0);[173G(B[m[12d  [17d [H[12dB+[21d>[28d[43d(gdb) n[30d[M[43d[30d[2M[42dBreakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+[29;150H(B[0;7m16[171G0a
+(B[m[12;5H(B[0;7m16            n2 = write(fd2, buffer, n1); [21;5H(B[m25      }while((n1=read(fd1, buffer, 100)) > 0);[173G[12d  [21d [H[12dB+>[28d[43d(gdb) n[30d[M[43d[29;151H(B[0;7m7[171G23
+(B[m[12;5H16            n2 = write(fd2, buffer, n1); 
+[5G(B[0;7m17            if(n1 == -1){[173G(B[m[A   [H[12dB+
+>[28d[43d(gdb) n[30d[M[43d[29;150H(B[0;7m21[171G40
+(B[m[13;5H17            if(n1 == -1){[17;5H(B[0;7m21            if(n2 != n1){[173G(B[m[12d  
+ [H[12dB+[17d>[28d[43d(gdb) n[30d[M[43d[29;151H(B[0;7m5[171G6
+(B[m[17;5H21            if(n2 != n1){[21;5H(B[0;7m25      }while((n1=read(fd1, buffer, 100)) > 0);[173G(B[m[12d  [17d [H[12dB+[21d>[28d[43d(gdb) n[30d[M[43d[30d[2M[42dBreakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+[29;150H(B[0;7m16[171G0a
+(B[m[12;5H(B[0;7m16            n2 = write(fd2, buffer, n1); [21;5H(B[m25      }while((n1=read(fd1, buffer, 100)) > 0);[173G[12d  [21d [H[12dB+>[28d[43d(gdb) n[J[30d(gdb) n
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+[29;151H(B[0;7m7[171G23
+(B[m[12;5H16            n2 = write(fd2, buffer, n1); 
+[5G(B[0;7m17            if(n1 == -1){[173G(B[m[A   [H[12dB+
+>[28d[43d(gdb) n[J[33d[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+[29;150H(B[0;7m21[171G40
+(B[m[13;5H17            if(n1 == -1){[17;5H(B[0;7m21            if(n2 != n1){[173G(B[m[12d  
+ [H[12dB+[17d>[28d[43d(gdb) n[J[32d[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+[29;151H(B[0;7m5[171G6
+(B[m[17;5H21            if(n2 != n1){[21;5H(B[0;7m25      }while((n1=read(fd1, buffer, 100)) > 0);[173G(B[m[12d  [17d [H[12dB+[21d>[28d[43d(gdb) n[J[31d[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+n[30dBreakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n
+(gdb) n[K
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n
+(gdb) n[K
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+[29;150H(B[0;7m16[171G0a
+(B[m[12;5H(B[0;7m16            n2 = write(fd2, buffer, n1); [21;5H(B[m25      }while((n1=read(fd1, buffer, 100)) > 0);[173G[12d  [21d [H[12dB+>[28d[43d(gdb) nn[30d[M[43dUndefined command: "nn".  Try "help".[30d[M[43d(gdb) n[30d[M[43d[29;151H(B[0;7m7[171G23
+(B[m[12;5H16            n2 = write(fd2, buffer, n1); 
+[5G(B[0;7m17            if(n1 == -1){[173G(B[m[A   [H[12dB+
+>[28d[43d(gdb) n[30d[M[43d[29;150H(B[0;7m21[171G40
+(B[m[13;5H17            if(n1 == -1){[17;5H(B[0;7m21            if(n2 != n1){[173G(B[m[12d  
+ [H[12dB+[17d>[28d[43d(gdb) n[30d[M[43d[29;151H(B[0;7m5[171G6
+(B[m[17;5H21            if(n2 != n1){[21;5H(B[0;7m25      }while((n1=read(fd1, buffer, 100)) > 0);[173G(B[m[12d  [17d [H[12dB+[21d>[28d[43d(gdb) n[30d[M[43d[30d[2M[42dBreakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+[29;150H(B[0;7m16[171G0a
+(B[m[12;5H(B[0;7m16            n2 = write(fd2, buffer, n1); [21;5H(B[m25      }while((n1=read(fd1, buffer, 100)) > 0);[173G[12d  [21d [H[12dB+>[28d[43d(gdb) n[30d[M[43d[29;151H(B[0;7m7[171G23
+(B[m[12;5H16            n2 = write(fd2, buffer, n1); 
+[5G(B[0;7m17            if(n1 == -1){[173G(B[m[A   [H[12dB+
+>[28d[43d(gdb) n[30d[M[43d[29;150H(B[0;7m21[171G40
+(B[m[13;5H17            if(n1 == -1){[17;5H(B[0;7m21            if(n2 != n1){[173G(B[m[12d  
+ [H[12dB+[17d>[28d[43d(gdb) n[30d[M[43d[29;151H(B[0;7m5[171G6
+(B[m[17;5H21            if(n2 != n1){[21;5H(B[0;7m25      }while((n1=read(fd1, buffer, 100)) > 0);[173G(B[m[12d  [17d [H[12dB+[21d>[28d[43d(gdb) n[30d[M[43d[30d[2M[42dBreakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+[29;150H(B[0;7m16[171G0a
+(B[m[12;5H(B[0;7m16            n2 = write(fd2, buffer, n1); [21;5H(B[m25      }while((n1=read(fd1, buffer, 100)) > 0);[173G[12d  [21d [H[12dB+>[28d[43d(gdb) n[J[30d(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+[29;151H(B[0;7m7[171G23
+(B[m[12;5H16            n2 = write(fd2, buffer, n1); 
+[5G(B[0;7m17            if(n1 == -1){[173G(B[m[A   [H[12dB+
+>[28d[43d(gdb) n[J[33d[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+[29;150H(B[0;7m21[171G40
+(B[m[13;5H17            if(n1 == -1){[17;5H(B[0;7m21            if(n2 != n1){[173G(B[m[12d  
+ [H[12dB+[17d>[28d[43d(gdb) n[J[32d[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+[29;151H(B[0;7m5[171G6
+(B[m[17;5H21            if(n2 != n1){[21;5H(B[0;7m25      }while((n1=read(fd1, buffer, 100)) > 0);[173G(B[m[12d  [17d [H[12dB+[21d>[28d[43d(gdb) n[J[31d[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[30dBreakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n
+(gdb) n[K
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n
+(gdb) n[K
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+[29;150H(B[0;7m16[171G0a
+(B[m[12;5H(B[0;7m16            n2 = write(fd2, buffer, n1); [21;5H(B[m25      }while((n1=read(fd1, buffer, 100)) > 0);[173G[12d  [21d [H[12dB+>[28d[43d(gdb) n[J[30d(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+[29;151H(B[0;7m7[171G23
+(B[m[12;5H16            n2 = write(fd2, buffer, n1); 
+[5G(B[0;7m17            if(n1 == -1){[173G(B[m[A   [H[12dB+
+>[28d[43d(gdb) n[J[33d[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+[29;150H(B[0;7m21[171G40
+(B[m[13;5H17            if(n1 == -1){[17;5H(B[0;7m21            if(n2 != n1){[173G(B[m[12d  
+ [H[12dB+[17d>[28d[43d(gdb) n[J[32d[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+[29;151H(B[0;7m5[171G6
+(B[m[17;5H21            if(n2 != n1){[21;5H(B[0;7m25      }while((n1=read(fd1, buffer, 100)) > 0);[173G(B[m[12d  [17d [H[12dB+[21d>[28d[43d(gdb) n[J[31d[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[30dBreakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n
+(gdb) n[K
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n
+(gdb) n[K
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+[29;150H(B[0;7m16[171G0a
+(B[m[12;5H(B[0;7m16            n2 = write(fd2, buffer, n1); [21;5H(B[m25      }while((n1=read(fd1, buffer, 100)) > 0);[173G[12d  [21d [H[12dB+>[28d[43d(gdb) n[J[30d(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+[29;151H(B[0;7m7[171G23
+(B[m[12;5H16            n2 = write(fd2, buffer, n1); 
+[5G(B[0;7m17            if(n1 == -1){[173G(B[m[A   [H[12dB+
+>[28d[43d(gdb) n[J[33d[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+[29;150H(B[0;7m21[171G40
+(B[m[13;5H17            if(n1 == -1){[17;5H(B[0;7m21            if(n2 != n1){[173G(B[m[12d  
+ [H[12dB+[17d>[28d[43d(gdb) n[J[32d[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+[29;151H(B[0;7m5[171G6
+(B[m[17;5H21            if(n2 != n1){[21;5H(B[0;7m25      }while((n1=read(fd1, buffer, 100)) > 0);[173G(B[m[12d  [17d [H[12dB+[21d>[28d[43d(gdb) n[J[31d[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[30dBreakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n
+(gdb) n[K
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n
+(gdb) n[K
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+[29;150H(B[0;7m16[171G0a
+(B[m[12;5H(B[0;7m16            n2 = write(fd2, buffer, n1); [21;5H(B[m25      }while((n1=read(fd1, buffer, 100)) > 0);[173G[12d  [21d [H[12dB+>[28d[43d(gdb) n[J[30d(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+[29;151H(B[0;7m7[171G23
+(B[m[12;5H16            n2 = write(fd2, buffer, n1); 
+[5G(B[0;7m17            if(n1 == -1){[173G(B[m[A   [H[12dB+
+>[28d[43d(gdb) n[J[33d[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+[29;150H(B[0;7m21[171G40
+(B[m[13;5H17            if(n1 == -1){[17;5H(B[0;7m21            if(n2 != n1){[173G(B[m[12d  
+ [H[12dB+[17d>[28d[43d(gdb) n[J[32d[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+[29;151H(B[0;7m5[171G6
+(B[m[17;5H21            if(n2 != n1){[21;5H(B[0;7m25      }while((n1=read(fd1, buffer, 100)) > 0);[173G(B[m[12d  [17d [H[12dB+[21d>[28d[43d(gdb) n[J[31d[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[29;151H(B[0;7m7[171G81
+(B[m[21;5H25      }while((n1=read(fd1, buffer, 100)) > 0);
+
+[5G(B[0;7m27        close(fd1);[173G(B[m[12d  [21d [H[12dB+[23d>[28d[43d(gdb) n[J[30d[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K[43d[29;151H(B[0;7m8[172Gb
+(B[m[23;5H27        close(fd1);
+[5G(B[0;7m28        close(fd2);  [173G(B[m[12d  [23d [H[12dB+[24d>
+
+
+
+[43d(gdb) n[J[30dBreakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K[43d[29;151H(B[0;7m9[171G95
+(B[m[24;5H28        close(fd2);  
+[5G(B[0;7m29        exit(0);[173G(B[m[12d  [24d [H[12dB+[25d>
+
+
+[43d(gdb) n[J[30d(gdb) n[K
+
+
+
+[K
+Breakpoint 1, main (argc=3, argv=0x7fffffffd908) at copy.c:16
+(gdb) n[K[43d[30d[M[42d[Inferior 1 (process 15443) exited normally]
+[29;8H(B[0;7mNo process In: main   
+(B[m[29;23H(B[0;7m    [29;149H            L??   PC: ??
+(B[m[2;5H [13G[33X
+[5G [3;14H             
+[5G [4;14H[17X
+[5G [5;14H[16X
+[5G  [14G[68X
+[5G  [7;20H[40X
+[5G  [8;18H[24X
+[5G  [9;18H        
+[5G  [14G 
+[5G  [14G   
+[5G  [12;19H[28X
+[5G  [13;19H             
+[5G  [14;26H[27X
+[5G  [15;26H        
+[5G  [16;19H 
+[5G  [17;19H             
+[5G  [18;26H[27X
+[5G  [19;26H        
+[5G  [20;20H 
+[5G  [13G[40X
+[5G  [13G[38X
+[5G  [23;15H           
+[5G  [24;15H           
+[5G[18X
+  [13G 
+[5G  [1;13H[15;65H[ No Source Available ][12d  [25d [H[28d[2;5H6[13Gint main(int argc, char *argv[]){
+[5G7[3;14Hint fd1, fd2;
+[5G8[4;14Hchar buffer[100];
+[5G9[5;14Hlong int n1, n2;
+[5G10[14Gif(((fd1 = open(argv[1], O_RDONLY)) == -1) ||  ((fd2 = open(argv[2],
+[5G11[7;20HO_CREAT|O_WRONLY|O_TRUNC,0700)) == -1)){
+[5G12[8;18Hperror("file problem ");
+[5G13[9;18Hexit(1);
+[5G14[14G}
+[5G15[14Gdo{
+[5G16[12;19Hn2 = write(fd2, buffer, n1);
+[5G17[13;19Hif(n1 == -1){
+[5G18[14;26Hperror("Reading problem ");
+[5G19[15;26Hexit(2);[15;65H[23X
+[5G20[16;19H}
+[5G21[17;19Hif(n2 != n1){
+[5G22[18;26Hperror("writing problem ");
+[5G23[19;26Hexit(3);
+[5G24[20;20H}
+[5G25[13G}while((n1=read(fd1, buffer, 100)) > 0);
+[5G26[13G// Case of an error exit from the loop
+[5G27[23;15Hclose(fd1);
+[5G28[24;15Hclose(fd2);
+[5G29[25;15Hexit(0);
+[5G30[13G}
+[5G31[1;13H[12dB+[28d
+
+[43d(gdb) n[30d[M[43dThe program is not being run.[30d[M[43d(gdb) q[43;1H[?1049l[23;0;0t[?1l>]0;trive11w@bravo: ~/Desktop/COMP_2560/Lab02[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Lab02[00m$ gcc copy.c -o copy
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Lab02[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Lab02[00m$ ./copy copy.c copy.bak
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Lab02[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Lab02[00m$ more copy.bak
+#include <unistd.h> 
+#include <fcntl.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+int main(int argc, char *argv[]){ 
+ int fd1, fd2;
+ char buffer[100];
+ long int n1, n2;
+ if(((fd1 = open(argv[1], O_RDONLY)) == -1) ||  ((fd2 = open(argv[2],  
+       O_CREAT|O_WRONLY|O_TRUNC,0700)) == -1)){
+     perror("file problem ");  
+     exit(1);
+ }
+ do{
+      n2 = write(fd2, buffer, n1); 
+      if(n1 == -1){
+             perror("Reading problem ");  
+             exit(2);
+      }
+      if(n2 != n1){
+             perror("writing problem ");  
+             exit(3);
+       }
+}while((n1=read(fd1, buffer, 100)) > 0);
+// Case of an error exit from the loop  
+  close(fd1);
+  close(fd2);  
+  exit(0);
+}
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Lab02[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Lab02[00m$ exiy[Kt
+exit
+
+Script done on 2020-10-04 16:59:36-04:00 [COMMAND_EXIT_CODE="0"]

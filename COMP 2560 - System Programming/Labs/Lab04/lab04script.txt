@@ -1,0 +1,14 @@
+Script started on 2020-10-20 12:04:45-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Lab04[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Lab04[00m$ gcc lab[K[K[KLab04.c -o append
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Lab04[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Lab04[00m$ ./append [K]0;trive11w@bravo: ~/Desktop/COMP_2560/Lab04[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Lab04[00m$ ./append fiel[K[Kleread1.txt file [Kread2.txt fileread3.txt com[K[K[KresultFile[K[K[K[KcombinedFile.txt
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Lab04[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Lab04[00m$ more resultcombinedFile.txt
+Hello from file 3
+
+Hello from file 2
+
+Hello from file 1
+
+]0;trive11w@bravo: ~/Desktop/COMP_2560/Lab04[01;32mtrive11w@bravo[00m:[01;34m~/Desktop/COMP_2560/Lab04[00m$ exit
+exit
+
+Script done on 2020-10-20 12:06:08-04:00 [COMMAND_EXIT_CODE="0"]

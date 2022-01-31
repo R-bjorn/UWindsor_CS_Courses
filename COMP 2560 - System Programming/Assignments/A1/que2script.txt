@@ -1,0 +1,19 @@
+Script started on 2020-10-09 11:28:48-04:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="99" LINES="24"]
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn_1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn_1[00m$ gcc que2.c -o que2
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn_1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn_1[00m$ ./que2
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn_1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn_1[00m$ more que2ri[K[Kwrite.txt
+101   GM  	Buick  	2010
+102   Ford	Lincoln	2005
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn_1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn_1[00m$ od -c que2write.txt
+0000000   1   0   1               G   M          \t   B   u   i   c   k
+0000020          \t   2   0   1   0  \n   1   0   2               F   o
+0000040   r   d  \t   L   i   n   c   o   l   n  \t   2   0   0   5  \n
+0000060
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn_1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn_1[00m$ xxd que2write.txt
+00000000: 3130 3120 2020 474d 2020 0942 7569 636b  101   GM  .Buick
+00000010: 2020 0932 3031 300a 3130 3220 2020 466f    .2010.102   Fo
+00000020: 7264 094c 696e 636f 6c6e 0932 3030 350a  rd.Lincoln.2005.
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn_1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn_1[00m$ exit
+exit
+
+Script done on 2020-10-09 11:29:45-04:00 [COMMAND_EXIT_CODE="0"]

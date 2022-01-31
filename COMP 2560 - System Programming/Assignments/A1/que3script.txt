@@ -1,0 +1,11 @@
+Script started on 2020-10-09 11:33:29-04:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="99" LINES="44"]
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn_1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn_1[00m$ gcc que3.x[Kc -o que3
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn_1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn_1[00m$ que4[K[K[K[K./que3
+Text file has 2 lines
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn_1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn_1[00m$ more que[K[K[K[K[K[K[K[Kmore que2write.txt
+101   GM  	Buick  	2010
+102   Ford	Lincoln	2005
+]0;trive11w@charlie: ~/Desktop/COMP_2560/Asgn_1[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_2560/Asgn_1[00m$ exit
+exit
+
+Script done on 2020-10-09 11:34:02-04:00 [COMMAND_EXIT_CODE="0"]
