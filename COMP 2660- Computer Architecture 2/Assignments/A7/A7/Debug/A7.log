@@ -1,0 +1,6 @@
+﻿  Assembling A7.asm...
+A7.asm(213): error A2006: undefined symbol : Msg18
+A7.asm(234): error A2006: undefined symbol : Msg6
+A7.asm(268): error A2006: undefined symbol : Msg18
+A7.asm(275): error A2006: undefined symbol : Msg6
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\masm.targets(70,5): error MSB3721: The command "ml.exe /c /nologo /Zi /Fo"Debug\A7.obj" /W3 /errorReport:prompt  /TaA7.asm" exited with code 1.
