@@ -1,0 +1,10 @@
+^D:\COMPUTER SCIENCE\UNIVERSITY\S6\COMP-3520 INTRO TO COMPUTER GRAPHICS\ASSIGNMENT\A1\ASSIGNMENT_1\CMAKEFILES\227D4B84CADBF0D8BE0CA809BF43BB68\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/glfw-3.3.6/glfw-3.3.6 "-BD:/Computer Science/University/S6/COMP-3520 Intro to Computer Graphics/Assignment/A1/Assignment_1" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/Computer Science/University/S6/COMP-3520 Intro to Computer Graphics/Assignment/A1/Assignment_1/GLFW.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
