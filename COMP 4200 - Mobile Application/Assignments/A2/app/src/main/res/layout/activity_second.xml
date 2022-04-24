@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/textActivity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Activity"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/infoText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is the second activity as per the assignment. This activity has only one button to switch from second activity to main activity. Just click on the button below to move to the Main activity!"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginBottom="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textActivity2"></TextView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is your name : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/infoText2"
+        android:textColor="@color/black"
+        android:layout_margin="20sp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/nameData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_marginLeft="220dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="NAME"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:text="This is your age : "
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="20sp"
+        android:textColor="@color/black"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/ageData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/age"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="220dp"
+        android:text="AGE"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/uniStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age"
+        android:text="You are a student : "
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="20sp"
+        android:textColor="@color/black"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/studentData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/uniStudent"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="220dp"
+        android:text="Y/N"
+        ></TextView>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="Back"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/light_green"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/uniStudent"
+        android:onClick="switchBack"></Button>
+
+</RelativeLayout>
