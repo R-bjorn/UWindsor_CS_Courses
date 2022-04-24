@@ -1,0 +1,4 @@
+﻿  A2.cpp
+D:\Computer Science\University\S6\COMP-3520 Intro to Computer Graphics\Assignment\A2\A2\A2.cpp(162,17): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\Computer Science\University\S6\COMP-3520 Intro to Computer Graphics\Assignment\A2\A2\A2.cpp(169,17): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+  A2.vcxproj -> D:\Computer Science\University\S6\COMP-3520 Intro to Computer Graphics\Assignment\A2\x64\Debug\A2.exe

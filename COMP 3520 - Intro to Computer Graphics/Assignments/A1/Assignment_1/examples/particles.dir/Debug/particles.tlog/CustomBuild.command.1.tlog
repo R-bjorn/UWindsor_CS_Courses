@@ -1,0 +1,10 @@
+^C:\GLFW-3.3.6\GLFW-3.3.6\EXAMPLES\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/glfw-3.3.6/glfw-3.3.6 "-BD:/Computer Science/University/S6/COMP-3520 Intro to Computer Graphics/Assignment/A1/Assignment_1" --check-stamp-file "D:/Computer Science/University/S6/COMP-3520 Intro to Computer Graphics/Assignment/A1/Assignment_1/examples/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

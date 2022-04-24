@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Computer Science\University\S6\COMP-3520 Intro to Computer Graphics\Assignment\A1\Assignment_1\CMakeFiles\5b7055fd9fca80841520346a81822cd3\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9D34C5EE-D4F4-3480-AC77-9C1F1F2EA563}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
