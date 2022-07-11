@@ -1,0 +1,38 @@
+#colour {
+  background-color: #A00;
+  color: #FFF;
+  padding: 0;
+
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  width: 200px;
+  height: 200px;
+  margin: -100px 0 0 -100px;
+}
+
+#counter {
+  background-color: #0A0;
+  color: #FF0;
+  padding: 0;
+
+  position: absolute;
+  top: 50%;
+  left: 67%;
+  width: 200px;
+  height: 200px;
+  margin: -100px 0 0 -100px;
+}
+
+#background {
+  background-color: #AAA;
+  color: #000;
+  padding: 0;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin: -100px 0 0 -100px;
+}
