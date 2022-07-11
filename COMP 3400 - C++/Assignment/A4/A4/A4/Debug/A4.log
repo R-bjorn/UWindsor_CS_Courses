@@ -1,0 +1,47 @@
+﻿  A4.cxx
+  The contents of <optional> are available only with C++17 or later.
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(44,29): error C2098: unexpected token after data member '<='
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(44,29): error C2059: syntax error: '>'
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(29,3): error C3615: constexpr function 'card::card' cannot result in a constant expression
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(29,3): message : failure was caused by 'constexpr' constructor not initializing member 'card::suit_'
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(70,18): error C3615: constexpr function 'card::swap' cannot result in a constant expression
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(73,9): message : failure was caused by call of undefined function or one not declared 'constexpr'
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(73,9): message : see usage of 'std::swap'
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(74,9): message : failure was caused by call of undefined function or one not declared 'constexpr'
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(74,9): message : see usage of 'std::swap'
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(81,34): error C2473: 'operator <=': looks like a function definition, but there is no parameter list.
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(81,23): error C7525: inline variables require at least '/std:c++17'
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(81,34): error C2737: '<=': 'constexpr' object must be initialized
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(81,23): error C2737: '<=': 'constexpr' object must be initialized
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(81,34): error C3531: '<=': a symbol whose type contains 'auto' must have an initializer
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(81,34): error C2143: syntax error: missing ';' before '>'
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(81,34): error C2059: syntax error: '>'
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(85,1): error C2143: syntax error: missing ';' before '{'
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(85,1): error C2447: '{': missing function header (old-style formal list?)
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(123,18): error C7589: defaulting comparison operators requires at least '/std:c++latest'
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(155,8): error C2039: 'optional': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\iostream(19): message : see declaration of 'std'
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(155,16): error C2143: syntax error: missing ';' before '<'
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(155,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(155,39): error C2238: unexpected token(s) preceding ';'
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(177,18): error C7589: defaulting comparison operators requires at least '/std:c++latest'
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(160,5): error C2614: 'card_suits': illegal member initialization: 'suit_' is not a base or member
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(165,5): error C2614: 'card_suits': illegal member initialization: 'suit_' is not a base or member
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(170,5): error C2614: 'card_suits': illegal member initialization: 'suit_' is not a base or member
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(182,13): error C2065: 'suit_': undeclared identifier
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(180,36): error C3615: constexpr function 'card_suits::operator *' cannot result in a constant expression
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(183): message : failure was caused by control reaching the end of a constexpr function
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(188,9): error C2065: 'suit_': undeclared identifier
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(190,16): error C2065: 'suit_': undeclared identifier
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(191,1): error C2050: switch expression not integral
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(192,29): error C2065: 'suit_': undeclared identifier
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(193,29): error C2065: 'suit_': undeclared identifier
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(194,29): error C2065: 'suit_': undeclared identifier
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\card.hxx(196,29): error C2065: 'suit_': undeclared identifier
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\A4.cxx(13,37): error C2059: syntax error: 'string'
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\A4.cxx(21,54): error C2678: binary '!=': no operator found which takes a left-hand operand of type 'card_faces' (or there is no acceptable conversion)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\random(2012,24): message : could be 'bool std::operator !=(const std::bernoulli_distribution &,const std::bernoulli_distribution &)'
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\A4.cxx(21,54): message : while trying to match the argument list '(card_faces, card_faces)'
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\A4.cxx(22,55): error C2678: binary '!=': no operator found which takes a left-hand operand of type 'card_suits' (or there is no acceptable conversion)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\random(2012,24): message : could be 'bool std::operator !=(const std::bernoulli_distribution &,const std::bernoulli_distribution &)'
+D:\University\S4\COMP 3400 C++\Assignment\A4\A4\A4\A4.cxx(22,55): message : while trying to match the argument list '(card_suits, card_suits)'
