@@ -1,0 +1,59 @@
+Script started on 2021-11-23 20:50:50-05:00 [TERM="xterm" TTY="/dev/pts/6" COLUMNS="172" LINES="45"]
+[?2004h]0;trive11w@charlie: ~/Desktop/COMP_3150/A3[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_3150/A3[00m$ sqlplus trive11w
+[?2004l
+SQL*Plus: Release 12.1.0.2.0 Production on Tue Nov 23 20:50:54 2021
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+Enter password: [KEnter password: [K[?2004h[KEnter password: [17G[17G[KEnter password: *[18G[18G[KEnter password: **[19G[19G[KEnter password: ***[20G[20G[KEnter password: ****[21G[21G[KEnter password: *****[22G[22G[KEnter password: ******[23G[23G[KEnter password: *******[24G[24G[KEnter password: ********[25G[25G[KEnter password: *********[26G[26G[KEnter password: **********[27G[27G[KEnter password: *********[26G[26G[KEnter password: **********[27G[27G[KEnter password: ***********[28G[28G[KEnter password: ************[29G[29G[KEnter password: *************[30G[30G[17G[?2004l[KEnter password: [17G
+[KERROR:
+ORA-01017: invalid username/password; logon denied
+
+
+Enter user-name: [KEnter user-name: [K[?2004hEnter user-name: trive11w[?2004l[Ktrive11w
+Enter password: [KEnter password: [K[?2004h[17G[17G[KEnter password: *[18G[18G[KEnter password: **[19G[19G[KEnter password: ***[20G[20G[KEnter password: ****[21G[21G[KEnter password: *****[22G[22G[KEnter password: ******[23G[23G[KEnter password: *******[24G[24G[KEnter password: ********[25G[25G[KEnter password: *********[26G[26G[KEnter password: **********[27G[27G[KEnter password: ***********[28G[28G[KEnter password: ************[29G[29G[KEnter password: *************[30G[30G[KEnter password: **************[31G[31G[17G[?2004l[KEnter password: [17G
+[KERROR:
+ORA-01017: invalid username/password; logon denied
+
+
+Enter user-name: [KEnter user-name: [K[?2004hEnter user-name: trive11w[?2004l[Ktrive11w
+Enter password: [KEnter password: [K[?2004h[17G[17G[KEnter password: *[18G[18G[KEnter password: **[19G[19G[KEnter password: ***[20G[20G[KEnter password: ****[21G[21G[KEnter password: *****[22G[22G[KEnter password: ******[23G[23G[KEnter password: *******[24G[24G[KEnter password: ********[25G[25G[KEnter password: *********[26G[26G[KEnter password: **********[27G[27G[KEnter password: ***********[28G[28G[KEnter password: ************[29G[29G[KEnter password: *************[30G[30G[KEnter password: **************[31G[31G[17G[?2004l[KEnter password: [17G
+[K
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> [KSQL> [K[?2004hSQL> a)SELECT VACCINE.VNAME, SELLS.CNAME[C[C[C[C[C[1P[1P[?2004l[KSELECT VACCINE.VNAME, SELLS.CNAME
+  2  [K  2  [K[?2004h  2  FROM VACCINE, SELLS[C[C[C[C[C[?2004l[KFROM VACCINE, SELLS
+  3  [K  3  [K[?2004h  3              WHERE EXISTS (SELECT DOSE[C[C[C[C[C[?2004l[K            WHERE EXISTS (SELECT DOSE
+  4  [K  4  [K[?2004h  4                                 FROM ADMINISTERS[C[C[C[C[C[?2004l[K                               FROM ADMINISTERS
+  5  [K  5  [K[?2004h  5                                 WHERE DOSE = 2 [C[C[C[C[C[?2004l[K                               WHERE DOSE = 2 
+  6  [K  6  [K[?2004h  6                                     AND VACCINE.VNAME = ADMINISTERS.VNAME [C[C[C[C[C[?2004l[K                                   AND VACCINE.VNAME = ADMINISTERS.VNAME 
+  7  [K  7  [K[?2004h  7                                     AND SELLS.VNAME = VACCINE.VNAME);[C[C[C[C[C[?2004l[K                                   AND SELLS.VNAME = VACCINE.VNAME);
+
+VNAME		     CNAME
+-------------------- --------------------
+Pfizer		     Pfizer
+
+SQL> [KSQL> [K[?2004hSQL> a)SELECT VACCINE.VNAME, SELLS.CNAME[C[C[C[C[C[1P[1P[?2004l[KSELECT VACCINE.VNAME, SELLS.CNAME
+  2  [K  2  [K[?2004h  2  FROM VACCINE, SELLS[C[C[C[C[C[?2004l[KFROM VACCINE, SELLS
+  3  [K  3  [K[?2004h  3  WHERE NOT EXISTS (SELECT DOSE[C[C[C[C[C[?2004l[KWHERE NOT EXISTS (SELECT DOSE
+  4  [K  4  [K[?2004h  4                    FROM ADMINISTERS[C[C[C[C[C[?2004l[K                  FROM ADMINISTERS
+  5  [K  5  [K[?2004h  5                    WHERE DOSE = 2 [C[C[C[C[C[?2004l[K                  WHERE DOSE = 2 
+  6  [K  6  [K[?2004h  6                        AND VACCINE.VNAME = ADMINISTERS.VNAME [C[C[C[C[C[?2004l[K                      AND VACCINE.VNAME = ADMINISTERS.VNAME 
+  7  [K  7  [K[?2004h  7                        AND SELLS.VNAME = VACCINE.VNAME) [C[C[C[C[C[?2004l[K                      AND SELLS.VNAME = VACCINE.VNAME) 
+  8  [K  8  [K[?2004h  8                        AND SELLS.VNAME = VACCINE.VNAME;[C[C[C[C[C[?2004l[K                      AND SELLS.VNAME = VACCINE.VNAME;
+
+VNAME		     CNAME
+-------------------- --------------------
+Astrazeneca	     Astrazeneca
+Johnson and Johnson  Johnson and Johnson
+Moderna 	     Moderna
+
+SQL> [KSQL> [K[?2004hSQL> exit[?2004l[Kexit
+Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+[?2004h]0;trive11w@charlie: ~/Desktop/COMP_3150/A3[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_3150/A3[00m$ exit
+[?2004lexit
+
+Script done on 2021-11-23 20:53:02-05:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,241 @@
+Script started on 2021-11-23 21:30:07-05:00 [TERM="xterm" TTY="/dev/pts/9" COLUMNS="100" LINES="35"]
+[?2004h]0;trive11w@charlie: ~/Desktop/COMP_3150/A3[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_3150/A3[00m$ sqlplus
+[?2004l
+SQL*Plus: Release 12.1.0.2.0 Production on Tue Nov 23 21:30:10 2021
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+Enter user-name: [KEnter user-name: [K[?2004hEnter user-name: trive11w[?2004l[Ktrive11w
+Enter password: [KEnter password: [K[?2004h[KEnter password: [17G[17G[KEnter password: *[18G[18G[KEnter password: **[19G[19G[KEnter password: ***[20G[20G[KEnter password: ****[21G[21G[KEnter password: *****[22G[22G[KEnter password: ******[23G[23G[KEnter password: *******[24G[24G[KEnter password: ********[25G[25G[KEnter password: *********[26G[26G[KEnter password: **********[27G[27G[KEnter password: ***********[28G[28G[KEnter password: ************[29G[29G[KEnter password: *************[30G[30G[KEnter password: **************[31G[31G[KEnter password: *************[30G[30G[KEnter password: **************[31G[31G[17G[?2004l[KEnter password: [17G
+[K
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> [KSQL> [K[?2004hSQL> @trive11w_ca[K[Kvaccinateschema.sql[C[C[C[C[C[?2004l[K@trive11w_vaccinateschema.sql
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> [KSQL> [K[?2004hSQL> select * from cat;[C[C[C[C[C[?2004l[Kselect * from cat;
+
+TABLE_NAME		       TABLE_TYPE
+------------------------------ -----------
+VACCINE 		       TABLE
+VACCINATES		       TABLE
+SELLS			       TABLE
+PERSON			       TABLE
+PCOMPANY		       TABLE
+CENTRE			       TABLE
+ADMINISTERS		       TABLE
+
+7 rows selected.
+
+SQL> [KSQL> [K[?2004hSQL> @trive11w_sel[K[K[Kvaccinatedata.sql[C[C[C[C[C[?2004l[K@trive11w_vaccinatedata.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> [KSQL> [K[?2004hSQL> select * from Person;[C[C[C[C[C[?2004l[Kselect * from Person;
+
+       SSN NAME 		  AGE JOBTYPE
+---------- --------------- ---------- ---------------
+	10 Jobe Bata		   65 nurse
+	20 Monica Kap		   80 retire
+	30 Peter Good		   22 retailer
+	40 Kate Lee		   47 teacher
+	50 Ted Tam		   50 Doctor
+
+SQL> [KSQL> [K[?2004hSQL> select * from centre;[C[C[C[C[C[?2004l[Kselect * from centre;
+
+     CNTID CNTNAME	   CITY 	       BUDGET  MANAGERID
+---------- --------------- --------------- ---------- ----------
+	 1 DownTn	   Windsor	       600000	      10
+	 2 St Clair	   Windsor	       400000	      10
+	 3 WFCU 	   Windsor	       900000	      50
+	 4 Other	   Windsor	       600000	      50
+
+SQL> [KSQL> [K[?2004hSQL> select * from pcompany;[C[C[C[C[C[?2004l[Kselect * from pcompany;
+
+CNAME		     CPHONE
+-------------------- ---------------
+Astrazeneca
+Johnson and Johnson  1(732) 524-0400
+Moderna 	     1(866) 633-3762
+Pfizer		     1(877) 633-2001
+US FDA		     1(888) 463-6332
+
+SQL> [KSQL> [K[?2004hSQL> select * from vaccine;[C[C[C[C[C[?2004l[Kselect * from vaccine;
+
+VNAME		     FORMULA	     MADEBY
+-------------------- --------------- --------------------
+Astrazeneca	     Adenoviruses    Astrazeneca
+Johnson and Johnson  viral vector    Johnson and Johnson
+Moderna 	     mRNA	     Moderna
+Pfizer		     mRNA	     Pfizer
+
+SQL> [KSQL> [K[?2004hSQL> select * from vaccinated[Ks;[C[C[C[C[C[?2004l[Kselect * from vaccinates;
+
+       SSN	CNTID
+---------- ----------
+	10	    1
+	10	    4
+	20	    1
+	30	    2
+	40	    3
+	50	    3
+	50	    4
+
+7 rows selected.
+
+SQL> [KSQL> [K[?2004hSQL> select * from administers;[C[C[C[C[C[?2004l[Kselect * from administers;
+
+       SSN	CNTID VNAME	      VDATE	      DOSE    VACTIME
+---------- ---------- --------------- --------- ---------- ----------
+	10	    1 Pfizer	      02-APR-21 	 1	 13.3
+	10	    4 Pfizer	      12-JUN-21 	 2	 12.3
+	20	    4 Astrazeneca     04-MAR-21 	 1	    9
+	30	    2 Moderna	      12-MAY-21 	 1	   11
+	40	    3 Pfizer	      20-APR-21 	 1	 15.3
+	50	    4 Astrazeneca     20-APR-21 	 1	 10.3
+	50	    3 Pfizer	      23-JUN-21 	 2	   14
+
+7 rows selected.
+
+SQL> [KSQL> [K[?2004hSQL> select * from sells;[C[C[C[C[C[?2004l[Kselect * from sells;
+
+VNAME		     CNAME		       PRICE
+-------------------- -------------------- ----------
+Astrazeneca	     Astrazeneca		   5
+Johnson and Johnson  Johnson and Johnson	  10
+Moderna 	     Moderna			  32
+Pfizer		     Pfizer			  20
+
+SQL> [KSQL> [K[?2004hSQL> s[Kexit[?2004l[Kexit
+Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+[?2004h]0;trive11w@charlie: ~/Desktop/COMP_3150/A3[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_3150/A3[00m$ exit
+[?2004lexit
+
+Script done on 2021-11-23 21:31:34-05:00 [COMMAND_EXIT_CODE="0"]

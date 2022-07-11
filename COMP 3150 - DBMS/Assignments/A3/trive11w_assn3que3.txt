@@ -1,0 +1,84 @@
+Script started on 2021-11-23 18:33:31-05:00 [TERM="xterm" TTY="/dev/pts/6" COLUMNS="100" LINES="35"]
+[?2004h]0;trive11w@charlie: ~/Desktop/COMP_3150/A3[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_3150/A3[00m$ sqlplus
+[?2004l
+SQL*Plus: Release 12.1.0.2.0 Production on Tue Nov 23 18:33:34 2021
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+Enter user-name: [KEnter user-name: [K[K[?2004hEnter user-name: trive11w[?2004l[Ktrive11w
+Enter password: [KEnter password: [K[?2004h[KEnter password: [17G[17G[KEnter password: *[18G[18G[KEnter password: **[19G[19G[KEnter password: ***[20G[20G[KEnter password: ****[21G[21G[KEnter password: *****[22G[22G[KEnter password: ******[23G[23G[KEnter password: *******[24G[24G[KEnter password: ********[25G[25G[KEnter password: *********[26G[26G[KEnter password: **********[27G[27G[KEnter password: ***********[28G[28G[KEnter password: ************[29G[29G[KEnter password: *************[30G[30G[KEnter password: **************[31G[31G[17G[?2004l[KEnter password: [17G
+[K
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> [KSQL> [K[?2004hSQL> In[KNSERT INTO CENTRE VALUES90[K[K()[C[C;5);,); );');d);[1P);D);e);v);o);n);s);h);i);r);e);');,); );');W);i);n);d);s);o);r);');,); );1);0);0);0);0);0);0);,); );1);0);[C[C[C[C[C[C[C[?2004l[KINSERT INTO CENTRE VALUES(5, 'Devonshire', 'Windsor', 1000000, 10);
+
+1 row created.
+
+SQL> [KSQL> [K[?2004hSQL> upda[K[K[K[KP[KUPDATE[?2004l[KUPDATE
+  2  [K  2  [K[?2004h  2  SET BUG[KDGET -[K= 700000[C[C[C[C[C[?2004l[KSET BUDGET = 700000
+  3  [K  3  [K[?2004h  3  WHERE [?2004l[KWHERE 
+  4  [K  4  [K[?2004h  4  CNTNAME = 'S[KDownTn'l[K;[C[C[C[C[C[?2004l[KCNTNAME = 'DownTn';
+SET BUDGET = 700000
+*
+ERROR at line 2:
+ORA-00903: invalid table name
+
+
+SQL> [KSQL> [K[?2004hSQL> CNTNAME = 'DownTn';[C[C[C[C[CWHERE [KSET BUDGET = 700000[C[C[C[C[CUPDATE[K c[KCENTRE[C[C[C[C[C[?2004l[KUPDATE CENTRE
+  2  [K  2  [K[?2004h  2  UPDATE CENTRE[C[C[C[C[CCNTNAME = 'DownTn';[C[C[C[C[CWHERE [KSET BUDGET = 700000[C[C[C[C[C[?2004l[KSET BUDGET = 700000
+  3  [K  3  [K[?2004h  3  SET BUDGET = 700000[C[C[C[C[C[6PUPDATE CENTRE[C[C[C[C[CCNTNAME = 'DownTn';[C[C[C[C[C[6PUPDATE CENTRE[C[C[C[C[CCNTNAME = 'DownTn';[C[C[C[C[CWHERE [K[?2004l[KWHERE 
+  4  [K  4  [K[?2004h  4  WHERE SET BUDGET = 700000[C[C[C[C[C[6PUPDATE CENTRE[C[C[C[C[CCNTNAME = 'DownTn';[C[C[C[C[C[?2004l[KCNTNAME = 'DownTn';
+
+1 row updated.
+
+SQL> [KSQL> [K[?2004hSQL> SELECT[KT 8[K* from at[K[Kcentre;[C[C[C[C[C[?2004l[KSELECT * from centre;
+
+     CNTID CNTNAME	   CITY 	       BUDGET  MANAGERID
+---------- --------------- --------------- ---------- ----------
+	 1 DownTn	   Windsor	       700000	      10
+	 2 St Clair	   Windsor	       400000	      10
+	 3 WFCU 	   Windsor	       900000	      50
+	 4 Other	   Windsor	       600000	      50
+	 5 Devonshire	   Windsor	      1000000	      10
+
+SQL> [KSQL> [K[?2004hSQL> INSERT INTO PERSON VALUES()[C[C:[K;6);0);,); );M);[1P);');M);a);r);y); );T);a);m);a);'); );[1P);,); );2);1);,); );');s);t);u);d);e);n);t);');[C[C[C[C[C[C[C[?2004l[KINSERT INTO PERSON VALUES(60, 'Mary Tama', 21, 'student');
+
+1 row created.
+
+SQL> [KSQL> [K[?2004hSQL> selecr [Kt[K[Kt * from Person;[C[C[C[C[C[?2004l[Kselect * from Person;
+
+       SSN NAME 		  AGE JOBTYPE
+---------- --------------- ---------- ---------------
+	10 Jobe Bata		   65 nurse
+	20 Monica Kap		   80 retire
+	30 Peter Good		   22 retailer
+	40 Kate Lee		   47 teacher
+	50 Ted Tam		   50 Doctor
+	60 Mary Tama		   21 student
+
+6 rows selected.
+
+SQL> [KSQL> [K[?2004hSQL> Delete[?2004l[KDelete
+  2  [K  2  [K[?2004h  2  from Sells[C[C[C[C[C[?2004l[Kfrom Sells
+  3  [K  3  [K[?2004h  3  where cname = "[K'US FDA';[C[C[C[C[C[?2004l[Kwhere cname = 'US FDA';
+
+0 rows deleted.
+
+SQL> [KSQL> [K[?2004hSQL> se[K[Ke[Kselect * from sells;[C[C[C[C[C[?2004l[Kselect * from sells;
+
+VNAME		     CNAME		       PRICE
+-------------------- -------------------- ----------
+Astrazeneca	     Astrazeneca		   5
+Johnson and Johnson  Johnson and Johnson	  10
+Moderna 	     Moderna			  32
+Pfizer		     Pfizer			  20
+
+SQL> [KSQL> [K[?2004hSQL> s[Kexit[?2004l[Kexit
+Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+[?2004h]0;trive11w@charlie: ~/Desktop/COMP_3150/A3[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_3150/A3[00m$ exit
+[?2004lexit
+
+Script done on 2021-11-23 18:36:55-05:00 [COMMAND_EXIT_CODE="0"]
