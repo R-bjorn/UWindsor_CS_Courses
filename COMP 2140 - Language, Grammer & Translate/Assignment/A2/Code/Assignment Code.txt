@@ -1,0 +1,64 @@
+A21----------------
+
+public class Simulator{
+
+    public static boolean run ( DFA dfa , String input )
+    {
+        input = input.replaceAll("\\s+", "");
+//        System.out.println(input);
+        int i = 0;
+        String currentState = dfa.startState;
+        char currentChar = input.charAt(i);
+        while(i < input.length())
+        {
+            i++;
+            if(i == input.length())
+            {
+                break;
+            }
+            currentState = dfa.transitions.get(currentState+"_"+input.charAt(i));
+            currentChar = input.charAt(i); 
+            
+        }
+        return dfa.finalStates.contains(currentState);
+    }
+}
+
+---------------------
+
+A22------------------
+
+import java.nio.file.*;
+import java.io.*;
+%%
+%{
+static int n, id, c, qs, kw;
+
+
+	public static void main(String argv[]) throws java.io.IOException {
+
+ 	 A2 yy = new A2(new FileReader("A2.input"));
+	  while (yy.yylex()>yy.YYEOF)	{
+
+        }
+
+Files.write(Paths.get("A2.output"),("identifiers: "+id+"\nkeywords: "+kw+"\nnumbers: "+n+"\ncomments: "+c+"\nquotedString: "+qs).getBytes());
+      }
+%}
+%integer
+%class A2
+%state COMMENT
+
+%%
+
+<YYINITIAL>"/**" { yybegin(COMMENT); }
+<YYINITIAL> INT|MAIN|BEGIN|STRING|REAL|WRITE|READ|IF|ELSE|RETURN|END {kw++;}
+<YYINITIAL> [a-zA-Z][a-zA-Z0-9]* { id++; }
+<YYINITIAL> [0-9]*[.]?[0-9]+ {n++;}
+<YYINITIAL> \"[^\"]*\" {qs++;}
+<COMMENT>"**/" { yybegin(YYINITIAL); c++;}
+\r|\n|. {}    
+
+-----------------
+
+

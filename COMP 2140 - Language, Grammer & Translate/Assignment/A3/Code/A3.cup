@@ -1,0 +1,73 @@
+terminal WRITE, READ, IF, ELSE, RETURN, BEGIN, END, MAIN, STRING, INT, REAL, SEMI;
+terminal COMMA, LPAREN, RPAREN, PLUS, MINUS, TIMES, DIVIDE, CEQUAL, EEQUAL, NEQUAL;
+terminal NUMBER, ID, QUOTE;
+non terminal Integer Program;
+non terminal MDecl,FPS,FP,Type,Block,Stmts,Stmt,LVD,AssignStmt,RS,OPS;
+non terminal IfStatement,WriteStatement,ReadStatement,Expression,MultipleExp,PrimaryExp,BoolExp,APS;
+non terminal MS, UMS;
+precedence left PLUS,MINUS;
+precedence left TIMES,DIVIDE;
+precedence left ELSE;
+Program ::= MDecl {: RESULT = 1; :}
+        | MDecl Program:e {: RESULT=1+e; :}
+        ;
+Type ::= INT | REAL | STRING
+        ;
+MDecl ::= Type MAIN ID LPAREN OPS RPAREN Block
+           | Type ID LPAREN OPS RPAREN Block
+           ;
+OPS ::=
+	| FPS
+    ;
+FPS ::=FP
+             | FP COMMA FPS
+             ;
+FP  ::= Type ID
+             ;
+Block  ::= BEGIN Stmts END
+       ;
+Stmts ::= Stmt
+           | Stmt Stmts
+           ;
+Stmt ::= Block
+          | LVD
+          | AssignStmt
+          | RS
+          | IfStatement
+          | WriteStatement
+          | ReadStatement
+          ;
+LVD ::= Type ID SEMI
+             | Type AssignStmt
+             ;
+AssignStmt ::= ID CEQUAL Expression SEMI
+           ;
+RS ::= RETURN Expression SEMI
+			;
+IfStatement ::= IF LPAREN BoolExp RPAREN Stmt
+       | IF LPAREN BoolExp RPAREN Stmt ELSE Stmt
+       ;
+WriteStatement ::= WRITE LPAREN Expression COMMA QUOTE RPAREN SEMI
+          ;
+ReadStatement ::= READ LPAREN ID COMMA QUOTE RPAREN SEMI
+         ;
+Expression ::= MultipleExp
+           | MultipleExp PLUS Expression
+           | MultipleExp MINUS Expression
+           ;
+MultipleExp ::= PrimaryExp
+         | PrimaryExp TIMES MultipleExp
+         | PrimaryExp DIVIDE MultipleExp
+         ;
+PrimaryExp ::= NUMBER
+            | ID
+            | LPAREN Expression RPAREN
+            | ID LPAREN APS RPAREN
+            | ID LPAREN RPAREN
+            ;
+BoolExp ::= Expression EEQUAL Expression
+               | Expression NEQUAL Expression
+               ;
+APS   ::= Expression
+               | Expression COMMA APS
+               ;
