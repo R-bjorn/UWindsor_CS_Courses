@@ -1,0 +1,8 @@
+java JLex.Main <filename>
+..
+
+move <filename>.java MyLexer.java
+
+javac MyLexer.java
+
+java MyLexer
