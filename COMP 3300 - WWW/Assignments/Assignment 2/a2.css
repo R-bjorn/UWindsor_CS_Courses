@@ -1,0 +1,79 @@
+body{
+	background-color: #DFF;
+	font-family: sans-serif;
+	margin:0;
+	padding:0;
+}
+
+.container{
+	max-width: 1080px;
+	margin:0 auto;
+
+	display:flex;
+	flex-direction: column;
+}
+
+header{	order: 0;}
+.midsection{ order: 1; }
+footer{ order: 2; }
+
+/*CSS for Header tag*/
+header {
+	color: #FFF;
+	background-color: #070;
+	border-radius: 0.5em;
+	padding: 0.25ex 1em 0.25ex 1em;
+}
+
+/*CSS for everything under div with class midsection*/
+.midsection{
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.midsection main, .midsection nav{
+	border-radius: 0.5em;
+	padding: 0.25ex 1em 0.25ex 1em;
+}
+
+.midsection nav{
+	background-color: #D0D;
+	color: #fff;
+}
+
+.midsection nav ul{
+	/*Padding-left will only remove the padding from the left side, And that is exactly what we want*/
+	padding-left: 0;
+	/*LIst-style-type will remove those unnecessary bullet points from the list*/
+	list-style-type: none;
+}
+
+.midsection nav a{
+	/*Display: block will make each a an individial block, starts on a new line and takes up the max width allowed*/
+	display: block;
+	/*Padding using 2 args will take 1st arg and apply it to top and bottom and 2nd to left and right side*/
+	padding: 0.25em 0.5em;
+	color: #fff;
+	font-weight: bold;
+	/*will remove the underline from the link*/
+	text-decoration: none;
+}
+
+.midsection nav a:hover, .midsection nav a:focus{
+	/*This effect will only happen when user cursor will be over the link*/
+	background-color: #fff;	  
+	color: #000;
+}
+
+.midsection main{
+	width: 100%;
+	background-color: #DD0;
+}
+
+/*CSS for footer section*/
+footer{
+	color: #fff;
+	background-color: #770;
+	border-radius: 0.5em;
+	padding: 0.25ex 1em;
+}

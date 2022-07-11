@@ -1,0 +1,95 @@
+.container{
+	display: flex;
+	flex-direction: row;
+}
+
+.center{
+	text-align: center;
+}
+
+.ad{
+	/*Padding and Margin 1 arg is like apply all side with 1st arg. 
+	2 args means 1st arg to top and bottom side and 2nd to left and right side
+	4 args means each arg apply to top,right,bottom, left side in this order*/
+	margin: 0;
+	padding: 1.5em;
+	background-color: #DD0;
+	border-radius: 0.5em;
+}
+
+.price{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.price span{
+	margin-top: 0;
+}
+
+.price-currency{
+	font-size: 2rem;
+}
+
+.price-amount-dollar{
+		font-size: 4rem;
+}
+
+.price-amount-cents{
+	font-size: 1.5rem;
+	align-self: center;
+}
+
+.ad .button{
+	display: block;
+	background-color: #AFA;
+	color: #444;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0.5em 1em;
+}
+
+.login{
+	margin: 0;
+	padding: 1.5em;
+	background-color: #077;
+	border-radius: 0.5em;
+	color: #FF0;
+}
+
+.login h1{
+	margin-top: 0;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.login input:not([type=checkbox]):not([type=radio]){
+	display: block;
+	width: 100%;
+	margin-top: 0;
+}
+
+.login button{
+	margin-top: 1em;
+	border:3px solid #00C;
+	border-radius: 0.5em;
+	color: #fff;
+	background-color: #00C;
+	padding: 0.5em 1em;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.login button:hover, .login button:focus{
+	background-color: #fff;
+	color: #00C;
+}
+
+.login input{
+	border-color: #DD0;
+	color: #700;
+	background-color: #DD0;
+}
+
