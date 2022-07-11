@@ -1,0 +1,83 @@
+Script started on 2021-11-23 20:23:00-05:00 [TERM="xterm" TTY="/dev/pts/6" COLUMNS="172" LINES="45"]
+[?2004h]0;trive11w@charlie: ~/Desktop/COMP_3150/A3[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_3150/A3[00m$ sqlplus trive11w
+[?2004l
+SQL*Plus: Release 12.1.0.2.0 Production on Tue Nov 23 20:23:04 2021
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+Enter password: [KEnter password: [K[?2004h[KEnter password: [17G[17G[KEnter password: *[18G[18G[KEnter password: **[19G[19G[KEnter password: ***[20G[20G[KEnter password: ****[21G[21G[KEnter password: *****[22G[22G[KEnter password: ******[23G[23G[KEnter password: *******[24G[24G[KEnter password: ********[25G[25G[KEnter password: *********[26G[26G[KEnter password: **********[27G[27G[KEnter password: ***********[28G[28G[KEnter password: ************[29G[29G[KEnter password: *************[30G[30G[KEnter password: **************[31G[31G[17G[?2004l[KEnter password: [17G
+[K
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> [KSQL> [K[?2004hSQL> a)SELECT CNAME, CPHONE[1P[1P[?2004l[KSELECT CNAME, CPHONE
+  2  [K  2  [K[?2004h  2  FROM PCOMPANY[C[C[C[C[C[?2004l[KFROM PCOMPANY
+  3  [K  3  [K[?2004h  3  FROM PCOMPANY[C[C[C[C[C[?2004l[KFROM PCOMPANY
+
+SQL> [KSQL> [K[?2004hSQL> FROM PCOMPANY[C[C[C[C[CSELECT CNAME, CPHONE[C[C[C[C[C[?2004l[KSELECT CNAME, CPHONE
+  2  [K  2  [K[?2004h  2  SELECT CNAME, CPHONE[C[C[C[C[C[7PFROM PCOMPANY[C[C[C[C[CSELECT CNAME, CPHONE[C[C[C[C[C[7PFROM PCOMPANY[C[C[C[C[C[?2004l[KFROM PCOMPANY
+  3  [K  3  [K[?2004h  3  wh[K[KWHERE[?2004l[KWHERE
+  4  [K  4  [K[?2004h  4  CNAME = (SELECT MADEBY[C[C[C[C[C[?2004l[KCNAME = (SELECT MADEBY
+  5  [K  5  [K[?2004h  5  FROM VACCINE[C[C[C[C[C[?2004l[KFROM VACCINE
+  6  [K  6  [K[?2004h  6  WHERE VNAME='PF[Kfizer');[C[C[C[C[C[?2004l[KWHERE VNAME='Pfizer');
+
+CNAME		     CPHONE
+-------------------- ---------------
+Pfizer		     1(877) 633-2001
+
+SQL> [KSQL> [K[?2004hSQL> b)SELECT *[C[1P[1P[?2004l[KSELECT *
+  2  [K  2  [K[?2004h  2  FROM VACCINE[C[C[C[C[C[?2004l[KFROM VACCINE
+  3  [K  3  [K[?2004h  3  WQH[K[KHERE [?2004l[KWHERE 
+  4  [K  4  [K[?2004h  4  VNAME IN (SELECT VNAME[C[C[C[C[C[?2004l[KVNAME IN (SELECT VNAME
+  5  [K  5  [K[?2004h  5  FROM SELLS[C[C[C[C[C[?2004l[KFROM SELLS
+  6  [K  6  [K[?2004h  6  WHERE PRICE < [K[K> 5);[C[C[C[C[C[?2004l[KWHERE PRICE > 5);
+
+VNAME		     FORMULA	     MADEBY
+-------------------- --------------- --------------------
+Johnson and Johnson  viral vector    Johnson and Johnson
+Moderna 	     mRNA	     Moderna
+Pfizer		     mRNA	     Pfizer
+
+SQL> [KSQL> [K[?2004hSQL> c)SELECT PCOMPANY.CNAME, PCOMPANY.CPHONE, VACCINE.VNAME7AME[1PAME[C[C[C[C[C[1P[1P[?2004l[KSELECT PCOMPANY.CNAME, PCOMPANY.CPHONE, VACCINE.VNAME
+  2  [K  2  [K[?2004h  2  FROM PCOMPANY, VACCINE[C[C[C[C[C[?2004l[KFROM PCOMPANY, VACCINE
+  3  [K  3  [K[?2004h  3  WHERE PCOMPANY.CNAME = VACCINE.VNAME;[C[C[C[C[C[?2004l[KWHERE PCOMPANY.CNAME = VACCINE.VNAME;
+
+CNAME		     CPHONE	     VNAME
+-------------------- --------------- --------------------
+Astrazeneca			     Astrazeneca
+Johnson and Johnson  1(732) 524-0400 Johnson and Johnson
+Moderna 	     1(866) 633-3762 Moderna
+Pfizer		     1(877) 633-2001 Pfizer
+
+SQL> [KSQL> [K[?2004hSQL> d)SELECT SELLS.VNAME, SELLS.CNAME,PCOMPANY.CPHONE, SELLS.PRICE[C[C[C[C[C[1P[1P[?2004l[KSELECT SELLS.VNAME, SELLS.CNAME,PCOMPANY.CPHONE, SELLS.PRICE
+  2  [K  2  [K[?2004h  2  FROM SELLS, PCOMPANY[C[C[C[C[C[?2004l[KFROM SELLS, PCOMPANY
+  3  [K  3  [K[?2004h  3  WHERE PCOMPANY.CNAME = SELLS.VNAME;[C[C[C[C[C[?2004l[KWHERE PCOMPANY.CNAME = SELLS.VNAME;
+
+VNAME		     CNAME		  CPHONE	       PRICE
+-------------------- -------------------- --------------- ----------
+Astrazeneca	     Astrazeneca				   5
+Johnson and Johnson  Johnson and Johnson  1(732) 524-0400	  10
+Moderna 	     Moderna		  1(866) 633-3762	  32
+Pfizer		     Pfizer		  1(877) 633-2001	  20
+
+SQL> [KSQL> [K[?2004hSQL> e)SELECT ADMINISTERS.VNAME, VACCINE.FORMULA, SELLS.CNAME[C[C[C[C[C[1P[1P[1P[1@s[1P[1@S[?2004l[KSELECT ADMINISTERS.VNAME, VACCINE.FORMULA, SELLS.CNAME
+  2  [K  2  [K[?2004h  2  FROM VACCINE, SELLS, ADMINISTERS[C[C[C[C[C[?2004l[KFROM VACCINE, SELLS, ADMINISTERS
+  3  [K  3  [K[?2004h  3  WHERE ADMINISTERS.DOSE < 2 AND ADMINISTERS.VNAME =                          [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KVACCINE.VNAME AND SELLS.VNAME = ADMINISTERS.VNAME;[C[C[C[C[C[?2004l[KWHERE ADMINISTERS.DOSE < 2 AND ADMINISTERS.VNAME = VACCINE.VNAME AND SELLS.VNAME = ADMINISTERS.VNAME;
+
+VNAME		FORMULA 	CNAME
+--------------- --------------- --------------------
+Astrazeneca	Adenoviruses	Astrazeneca
+Astrazeneca	Adenoviruses	Astrazeneca
+Moderna 	mRNA		Moderna
+Pfizer		mRNA		Pfizer
+Pfizer		mRNA		Pfizer
+
+SQL> [KSQL> [K[?2004hSQL> EXIT[?2004l[KEXIT
+Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+[?2004h]0;trive11w@charlie: ~/Desktop/COMP_3150/A3[01;32mtrive11w@charlie[00m:[01;34m~/Desktop/COMP_3150/A3[00m$ exit
+[?2004lexit
+
+Script done on 2021-11-23 20:26:55-05:00 [COMMAND_EXIT_CODE="130"]
