@@ -1,0 +1,17 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <node symbol="Source" x="96" y="217" color="Black" caption="Sunshine" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Drain" x="290" y="219" color="Black" caption="Air Conditioner" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1"/>
+  <connection type="State Connection" start="7" end="5" label="+0.25" position="-0.5" color="Black" thickness="2">
+    <point x="186" y="138"/>
+    <point x="240" y="138"/>
+  </connection>
+  <connection type="State Connection" start="7" end="6" label="" position="0.5" color="Black" thickness="2">
+    <point x="303" y="338"/>
+    <point x="480" y="338"/>
+  </connection>
+  <connection type="Resource Connection" start="0" end="7" label="6" position="-0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="7" end="1" label="3" position="-0.55" color="Black" thickness="2"/>
+  <node symbol="Chart" x="344" y="98" color="Black" caption="" width="212.42858886718756" height="180.2869384765625" captionPos="5" scaleX="0" scaleY="0"/>
+  <node symbol="Pool" x="185" y="217" color="Black" caption="Temperature" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="10" maxResources="-1" tokenLimit="0"/>
+  <node symbol="GroupBox" x="30" y="73" color="Black" caption="Feedback by Affecting Outputs" width="550.2763458251953" height="248.48992767333982" captionPos="5"/>
+</graph>

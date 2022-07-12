@@ -1,0 +1,51 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="800" height="800" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <connection type="Resource Connection" start="2" end="18" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="TextLabel" x="149" y="55" color="Black" caption="1a) Passive pool with one output"/>
+  <node symbol="Pool" x="103" y="103" color="Black" caption="Pool 1" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="5" maxResources="-1"/>
+  <connection type="Resource Connection" start="5" end="4" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="220" y="306" color="Black" caption="Pool 2" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="Pool" x="103" y="305" color="Black" caption="Pool 1" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="push any" actions="1" resourceColor="Black" startingResources="5" maxResources="-1"/>
+  <node symbol="TextLabel" x="161" y="257" color="Black" caption="1b) Button push pool with one output"/>
+  <connection type="Resource Connection" start="9" end="10" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="TextLabel" x="561" y="255" color="Black" caption="1c) Button pull pool with one input"/>
+  <node symbol="Pool" x="503" y="303" color="Black" caption="Pool 1" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="5" maxResources="-1"/>
+  <node symbol="Pool" x="620" y="304" color="Black" caption="Pool 2" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <connection type="Resource Connection" start="14" end="13" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="TextLabel" x="161" y="455" color="Black" caption="1d) Auto-push pool with one output"/>
+  <node symbol="Pool" x="220" y="504" color="Black" caption="Pool 2" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="Pool" x="103" y="503" color="Black" caption="Pool 1" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="push any" actions="1" resourceColor="Black" startingResources="5" maxResources="-1"/>
+  <connection type="Resource Connection" start="16" end="19" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="503" y="503" color="Black" caption="Pool 1" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="5" maxResources="-1"/>
+  <node symbol="TextLabel" x="561" y="455" color="Black" caption="1e) Auto-pull pool with one input"/>
+  <node symbol="Pool" x="220" y="104" color="Black" caption="Pool 2" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="Pool" x="620" y="504" color="Black" caption="Pool 2" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="GroupBox" x="40" y="40" color="Black" caption="" width="360" height="160" captionPos="7"/>
+  <connection type="Resource Connection" start="18" end="22" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="340" y="103" color="Black" caption="Pool 3" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="GroupBox" x="440" y="240" color="Black" caption="" width="360" height="160" captionPos="7"/>
+  <connection type="Resource Connection" start="10" end="25" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="740" y="302" color="Black" caption="Pool 3" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="GroupBox" x="40" y="242" color="Black" caption="" width="360" height="158" captionPos="7"/>
+  <node symbol="Pool" x="340" y="304" color="Black" caption="Pool 3" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <connection type="Resource Connection" start="4" end="27" label="" position="0.28" color="Black" thickness="2"/>
+  <node symbol="GroupBox" x="440" y="440" color="Black" caption="" width="360" height="160" captionPos="7"/>
+  <connection type="Resource Connection" start="19" end="31" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="737" y="503" color="Black" caption="Pool 3" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="GroupBox" x="40" y="440" color="Black" caption="" width="360" height="160" captionPos="7"/>
+  <node symbol="Pool" x="343" y="504" color="Black" caption="Pool 3" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <connection type="Resource Connection" start="13" end="33" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="48" end="40" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="40" end="37" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="340" y="703" color="Black" caption="Pool 3" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="GroupBox" x="40" y="641" color="Black" caption="" width="360" height="160" captionPos="7"/>
+  <node symbol="TextLabel" x="161" y="656" color="Black" caption="1c) Button pull pool with one input"/>
+  <node symbol="Pool" x="220" y="705" color="Black" caption="Pool 2" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="push any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <connection type="Resource Connection" start="47" end="46" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="TextLabel" x="561" y="659" color="Black" caption="1e) Auto-pull pool with one input"/>
+  <connection type="Resource Connection" start="46" end="44" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="737" y="707" color="Black" caption="Pool 3" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="GroupBox" x="440" y="644" color="Black" caption="" width="360" height="160" captionPos="7"/>
+  <node symbol="Pool" x="620" y="708" color="Black" caption="Pool 2" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="push any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="Pool" x="503" y="707" color="Black" caption="Pool 1" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="push any" actions="1" resourceColor="Black" startingResources="5" maxResources="-1"/>
+  <node symbol="Pool" x="103" y="704" color="Black" caption="Pool 1" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="push any" actions="1" resourceColor="Black" startingResources="5" maxResources="-1"/>
+</graph>

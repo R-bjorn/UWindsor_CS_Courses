@@ -1,0 +1,22 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="instantaneous" speed="100" actions="1" dice="D1000" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="1000" visibleRuns="1" colorCoding="1">
+  <connection type="State Connection" start="9" end="8" label="" position="0.5" color="Blue" thickness="3"/>
+  <connection type="State Connection" start="10" end="8" label="" position="0.5" color="Red" thickness="3"/>
+  <node symbol="EndCondition" x="66" y="257" color="Blue" caption="Blue Wins" thickness="3" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <connection type="Resource Connection" start="10" end="7" label="20*10%" position="0.5" color="Red" thickness="3"/>
+  <connection type="Resource Connection" start="9" end="11" label="20*10%" position="-0.66" color="Blue" thickness="3"/>
+  <connection type="State Connection" start="9" end="3" label="+1m" position="0.5" color="Blue" thickness="3"/>
+  <connection type="State Connection" start="10" end="14" label="+1" position="0.5" color="Red" thickness="3"/>
+  <node symbol="Drain" x="450" y="258" color="Red" caption="Die" thickness="3" captionPos="0.75" activationMode="automatic" pullMode="pull any" actions="1"/>
+  <node symbol="Chart" x="40" y="320" color="Blue" caption="" width="520" height="213.55258789062495" captionPos="5" scaleX="30" scaleY="20"/>
+  <node symbol="Pool" x="336" y="65" color="Blue" caption="Units" thickness="3" captionPos="0.84" activationMode="passive" pullMode="push any" actions="1" resourceColor="Blue" startingResources="20" maxResources="-1" tokenLimit="-1"/>
+  <node symbol="Pool" x="165" y="258" color="Red" caption="Units" thickness="3" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Red" startingResources="20" maxResources="-1" tokenLimit="-1"/>
+  <node symbol="Drain" x="92" y="65" color="Blue" caption="Die" thickness="3" captionPos="0.75" activationMode="automatic" pullMode="pull any" actions="1"/>
+  <connection type="State Connection" start="10" end="4" label="+1m" position="0.5" color="Red" thickness="3"/>
+  <connection type="State Connection" start="9" end="14" label="-1" position="0.5" color="Blue" thickness="3"/>
+  <node symbol="Pool" x="239" y="160" color="Black" caption="Difference" thickness="3" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="-1"/>
+  <connection type="State Connection" start="14" end="4" label="-5" position="0.5" color="Black" thickness="3"/>
+  <connection type="State Connection" start="14" end="3" label="+5" position="0.5" color="Black" thickness="3"/>
+  <connection type="State Connection" start="9" end="19" label="==0" position="0.5" color="Blue" thickness="3"/>
+  <connection type="State Connection" start="10" end="2" label="==0" position="0.5" color="Red" thickness="3"/>
+  <node symbol="EndCondition" x="475" y="65" color="Red" caption="Red Wins" thickness="3" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+</graph>

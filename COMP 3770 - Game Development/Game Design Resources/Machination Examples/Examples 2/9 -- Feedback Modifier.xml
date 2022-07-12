@@ -1,0 +1,15 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <connection type="Resource Connection" start="2" end="6" label="6" position="-0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="6" end="3" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Source" x="80" y="121" color="Black" caption="Heater" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Drain" x="256" y="122" color="Black" caption="Heat Loss" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1"/>
+  <connection type="State Connection" start="6" end="7" label="" position="0.5" color="Black" thickness="2">
+    <point x="240" y="40"/>
+  </connection>
+  <connection type="State Connection" start="6" end="0" label="-0.25" position="0.5" color="Black" thickness="2">
+    <point x="170" y="55"/>
+    <point x="124" y="55"/>
+  </connection>
+  <node symbol="Pool" x="169" y="121" color="Black" caption="Temperature" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="Chart" x="320" y="40" color="Black" caption="Temperature over Time" width="260.06499023437505" height="257.9934326171875" captionPos="5" scaleX="0" scaleY="24"/>
+</graph>

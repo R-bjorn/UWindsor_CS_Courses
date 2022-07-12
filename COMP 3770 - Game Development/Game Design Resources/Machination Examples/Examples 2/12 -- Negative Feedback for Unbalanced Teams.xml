@@ -1,0 +1,26 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="1">
+  <connection type="Resource Connection" start="6" end="3" label="5" position="0.5" color="Blue" thickness="2"/>
+  <connection type="Resource Connection" start="3" end="15" label="40%" position="0.5" color="Blue" thickness="2"/>
+  <connection type="Resource Connection" start="4" end="16" label="20%" position="-0.5" color="Red" thickness="2"/>
+  <node symbol="Gate" x="161" y="108" color="Blue" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" gateType="dice"/>
+  <node symbol="Gate" x="161" y="280" color="Red" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" gateType="dice"/>
+  <connection type="Resource Connection" start="7" end="4" label="5" position="-0.37" color="Red" thickness="2"/>
+  <node symbol="Source" x="68" y="108" color="Blue" caption="Blue Team" thickness="2" captionPos="0.75" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Source" x="67" y="284" color="Red" caption="Red team" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="State Connection" start="16" end="14" label="-1" position="0.5" color="Red" thickness="2"/>
+  <connection type="State Connection" start="15" end="14" label="+1" position="-0.59" color="Blue" thickness="2"/>
+  <node symbol="Chart" x="320" y="91" color="Blue" caption="Points over Time" width="245.955322265625" height="253.613427734375" captionPos="5" scaleX="60" scaleY="160"/>
+  <connection type="State Connection" start="15" end="10" label="" position="0.5" color="Blue" thickness="2">
+    <point x="320" y="63"/>
+  </connection>
+  <connection type="State Connection" start="16" end="10" label="" position="0.5" color="Red" thickness="2">
+    <point x="311" y="384"/>
+  </connection>
+  <connection type="State Connection" start="14" end="10" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="161" y="192" color="Black" caption="Difference" thickness="2" captionPos="0.5" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="Pool" x="247" y="108" color="Blue" caption="Points" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="Pool" x="240" y="280" color="Red" caption="Points" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <connection type="State Connection" start="14" end="5" label="+1/5" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="14" end="0" label="-1/5" position="-0.5" color="Black" thickness="2"/>
+  <node symbol="GroupBox" x="16" y="40" color="Black" caption="Negative Feedback for Unbalanced Teams" width="572.2246658325195" height="343.38515625" captionPos="5"/>
+</graph>

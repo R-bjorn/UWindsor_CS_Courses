@@ -1,0 +1,16 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <node symbol="Pool" x="428" y="143" color="Black" caption="Points" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="EndCondition" x="99" y="142" color="Black" caption="Level Complete" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="GroupBox" x="16" y="68" color="Black" caption="Dots Example" width="491.2621612548828" height="177.6141296386719" captionPos="5"/>
+  <connection type="State Connection" start="4" end="1" label="==0" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="221" y="143" color="Black" caption="Dots" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Gold" startingResources="50" maxResources="-1"/>
+  <connection type="Resource Connection" start="4" end="8" label="100%" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="8" end="0" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="4" end="5" label="+1%" position="-0.66" color="Black" thickness="2">
+    <point x="219" y="94"/>
+    <point x="269" y="95"/>
+  </connection>
+  <node symbol="Converter" x="315" y="143" color="Black" caption="Eat Dot" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="TextLabel" x="263" y="276" color="Black" caption="Eating a Dot reduces probability of eating the next one."/>
+  <node symbol="TextLabel" x="275" y="311" color="Black" caption="The feedback loop reduces the probability by the change in Dots times 1%."/>
+</graph>

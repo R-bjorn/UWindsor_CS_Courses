@@ -1,0 +1,22 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <node symbol="Source" x="73" y="130" color="Black" caption="Pass Go" thickness="2" captionPos="0.75" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Drain" x="71" y="311" color="Black" caption="Pay Rent" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1"/>
+  <node symbol="Pool" x="183" y="310" color="Black" caption="Money" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="Source" x="200" y="120" color="Black" caption="Rent Income" thickness="2" captionPos="0.75" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Pool" x="343" y="120" color="Black" caption="Property" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <connection type="Resource Connection" start="2" end="7" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="7" end="4" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Converter" x="312" y="312" color="Black" caption="Buy Property" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="State Connection" start="4" end="10" label="+1m" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="4" end="3" label=">0" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="3" end="2" label="0*D6/6" position="-0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="0" end="2" label="D/4" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="2" end="1" label="D/5" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Chart" x="401" y="122" color="Black" caption="" width="173.909375" height="227.19913330078126" captionPos="5" scaleX="0" scaleY="0"/>
+  <connection type="State Connection" start="2" end="13" label="" position="0.5" color="Black" thickness="2">
+    <point x="294" y="400"/>
+    <point x="472" y="400"/>
+  </connection>
+  <node symbol="GroupBox" x="20" y="40" color="Black" caption="Monopoly Feedback" width="569.8730606079101" height="374.980078125" captionPos="5"/>
+  <node symbol="TextLabel" x="280" y="455" color="Black" caption="Buying Property Feeds Back into Money"/>
+</graph>

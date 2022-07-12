@@ -1,0 +1,24 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <node symbol="Drain" x="269" y="107" color="Black" caption="Upkeep" thickness="2" captionPos="0.81" activationMode="automatic" pullMode="pull any" actions="1"/>
+  <connection type="Resource Connection" start="8" end="7" label="10" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="0" end="8" label="!" position="0.5" color="Black" thickness="2">
+    <point x="229" y="69"/>
+    <point x="99" y="69"/>
+    <point x="99" y="247"/>
+  </connection>
+  <connection type="Resource Connection" start="9" end="8" label="" position="0" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="7" end="0" label="0" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="9" end="4" label="+1" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="10" end="9" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="142" y="109" color="Black" caption="Gold" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="Converter" x="143" y="249" color="Black" caption="Sell" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Pool" x="206" y="251" color="Black" caption="Improvements" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="Source" x="301" y="249" color="Black" caption="Add Improvement" thickness="2" captionPos="0" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="GroupBox" x="60" y="45" color="Black" caption="Reverse Trigger" width="388.0153472900391" height="290.331884765625" captionPos="5"/>
+  <connection type="Resource Connection" start="17" end="15" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="15" end="14" label="!" position="0.5" color="Black" thickness="2"/>
+  <node symbol="EndCondition" x="335" y="397" color="Black" caption="Game Over" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Drain" x="217" y="401" color="Black" caption="Damage" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1"/>
+  <node symbol="GroupBox" x="47" y="372" color="Black" caption="Reverse Trigger" width="341.7670562744141" height="93.930908203125" captionPos="5"/>
+  <node symbol="Pool" x="99" y="402" color="Black" caption="Hit Points" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="5" maxResources="-1"/>
+</graph>

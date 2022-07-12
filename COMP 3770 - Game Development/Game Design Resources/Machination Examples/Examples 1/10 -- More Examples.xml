@@ -1,0 +1,59 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <connection type="State Connection" start="9" end="5" label="+1" position="0.5" color="Black" thickness="2">
+    <point x="141" y="108"/>
+    <point x="98" y="108"/>
+  </connection>
+  <node symbol="Pool" x="52" y="168" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="10" maxResources="-1" tokenLimit="0"/>
+  <connection type="Resource Connection" start="3" end="10" label="1" position="-0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="251" y="172" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="10" maxResources="-1" tokenLimit="0"/>
+  <connection type="Resource Connection" start="7" end="13" label="1" position="-0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="1" end="9" label="1" position="-0.5" color="Black" thickness="2"/>
+  <node symbol="GroupBox" x="15" y="82" color="Black" caption="i)" width="168.74998931884764" height="145.53191833496095" captionPos="7"/>
+  <node symbol="Pool" x="445" y="174" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="10" maxResources="-1" tokenLimit="0"/>
+  <node symbol="TextLabel" x="308" y="27" color="Black" caption="Minimum number of clicks to move all resources to pool A?"/>
+  <node symbol="Pool" x="142" y="169" color="Black" caption="A" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="Pool" x="341" y="173" color="Black" caption="A" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <connection type="State Connection" start="10" end="2" label="+2" position="0.5" color="Black" thickness="2">
+    <point x="340" y="112"/>
+    <point x="297" y="112"/>
+  </connection>
+  <connection type="State Connection" start="13" end="4" label="+2/3" position="0.5" color="Black" thickness="2">
+    <point x="534" y="114"/>
+    <point x="491" y="114"/>
+  </connection>
+  <node symbol="Pool" x="535" y="175" color="Black" caption="A" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="GroupBox" x="214" y="86" color="Black" caption="j)" width="168.8062255859375" height="144.55106201171876" captionPos="7"/>
+  <node symbol="GroupBox" x="408" y="88" color="Black" caption="k)" width="170.11870117187505" height="139.9978759765625" captionPos="7"/>
+  <node symbol="Pool" x="54" y="360" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="10" maxResources="-1" tokenLimit="0"/>
+  <connection type="Resource Connection" start="16" end="18" label="1" position="-0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="144" y="361" color="Black" caption="A" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <connection type="State Connection" start="18" end="17" label="-1" position="0.5" color="Black" thickness="2">
+    <point x="143" y="300"/>
+    <point x="100" y="300"/>
+  </connection>
+  <node symbol="GroupBox" x="17" y="274" color="Black" caption="l)" width="168.74998931884764" height="145.53191833496095" captionPos="7"/>
+  <node symbol="Pool" x="250" y="371" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="10" maxResources="-1" tokenLimit="0"/>
+  <connection type="Resource Connection" start="21" end="23" label="1" position="-0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="340" y="372" color="Black" caption="A" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="GroupBox" x="213" y="285" color="Black" caption="m)" width="168.74998931884764" height="145.53191833496095" captionPos="7"/>
+  <connection type="Resource Connection" start="30" end="26" label="1" position="-0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="532" y="375" color="Black" caption="A" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="GroupBox" x="405" y="288" color="Black" caption="n)" width="168.74998931884764" height="145.53191833496095" captionPos="7"/>
+  <connection type="State Connection" start="21" end="22" label="-1" position="-0.5" color="Black" thickness="2">
+    <point x="251" y="311"/>
+    <point x="286" y="311"/>
+  </connection>
+  <connection type="State Connection" start="23" end="22" label="+1" position="0.5" color="Black" thickness="2">
+    <point x="339" y="311"/>
+    <point x="305" y="311"/>
+  </connection>
+  <node symbol="Pool" x="442" y="374" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="10" maxResources="-1" tokenLimit="0"/>
+  <connection type="State Connection" start="30" end="25" label="+1" position="-0.5" color="Black" thickness="2">
+    <point x="440" y="320"/>
+    <point x="471" y="320"/>
+  </connection>
+  <connection type="State Connection" start="26" end="25" label="+1" position="0.5" color="Black" thickness="2">
+    <point x="527" y="318"/>
+    <point x="498" y="318"/>
+  </connection>
+</graph>

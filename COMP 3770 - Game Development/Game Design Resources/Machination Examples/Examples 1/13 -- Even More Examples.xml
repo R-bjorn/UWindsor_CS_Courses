@@ -1,0 +1,29 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <node symbol="TextLabel" x="308" y="27" color="Black" caption="Minimum number of clicks needed to win?"/>
+  <connection type="Resource Connection" start="16" end="12" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="11" end="5" label=">10" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="12" end="17" label="+1" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="10" end="9" label=">10" position="0.5" color="Black" thickness="2"/>
+  <node symbol="EndCondition" x="226" y="135" color="Black" caption="win" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Pool" x="321" y="142" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="12" maxResources="-1" tokenLimit="0"/>
+  <node symbol="Converter" x="399" y="145" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="Resource Connection" start="6" end="7" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="EndCondition" x="544" y="143" color="Black" caption="win" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Pool" x="472" y="145" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="Pool" x="156" y="133" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="Pool" x="114" y="240" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="GroupBox" x="15" y="82" color="Black" caption="y)" width="230.4687271118164" height="209.44681091308593" captionPos="7"/>
+  <node symbol="GroupBox" x="280" y="85" color="Black" caption="z)" width="280.7875015258789" height="206.9127685546875" captionPos="7"/>
+  <node symbol="Source" x="70" y="134" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Source" x="45" y="240" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="Resource Connection" start="15" end="11" label="1" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="11" end="16" label=">2" position="-0.85" color="Black" thickness="2">
+    <point x="131" y="97"/>
+    <point x="40" y="99"/>
+  </connection>
+  <connection type="Resource Connection" start="7" end="10" label="2" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="23" end="19" label="-2" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Drain" x="520" y="240" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1"/>
+  <connection type="Resource Connection" start="23" end="21" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="439" y="240" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="1" maxResources="-1" tokenLimit="0"/>
+</graph>

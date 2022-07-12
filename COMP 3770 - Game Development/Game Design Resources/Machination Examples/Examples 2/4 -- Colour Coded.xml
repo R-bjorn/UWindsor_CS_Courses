@@ -1,0 +1,34 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="1">
+  <node symbol="Pool" x="230" y="171" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <connection type="Resource Connection" start="9" end="0" label="D" position="0.56" color="Red" thickness="2">
+    <point x="146" y="103"/>
+    <point x="190" y="103"/>
+  </connection>
+  <connection type="Resource Connection" start="9" end="0" label="D" position="-0.5" color="Blue" thickness="2">
+    <point x="142" y="240"/>
+    <point x="200" y="240"/>
+  </connection>
+  <connection type="State Connection" start="0" end="1" label="+1" position="-0.62" color="Blue" thickness="2">
+    <point x="172" y="165"/>
+  </connection>
+  <connection type="Resource Connection" start="0" end="6" label="20" position="0.5" color="Red" thickness="2">
+    <point x="268" y="103"/>
+    <point x="320" y="103"/>
+  </connection>
+  <connection type="Resource Connection" start="0" end="6" label="20" position="-0.5" color="Blue" thickness="2">
+    <point x="267" y="231"/>
+    <point x="320" y="231"/>
+  </connection>
+  <node symbol="Drain" x="360" y="170" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull all" actions="1"/>
+  <connection type="State Connection" start="0" end="12" label="" position="0.5" color="Blue" thickness="2"/>
+  <connection type="State Connection" start="0" end="12" label="" position="0.5" color="Red" thickness="2">
+    <point x="97" y="320"/>
+    <point x="97" y="391"/>
+  </connection>
+  <node symbol="Source" x="101" y="176" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="State Connection" start="0" end="2" label="+2" position="0.5" color="Red" thickness="2">
+    <point x="173" y="179"/>
+  </connection>
+  <node symbol="GroupBox" x="40" y="40" color="Black" caption="Colour Coded" width="523.6037109375" height="502.21376953125" captionPos="5"/>
+  <node symbol="Chart" x="159" y="296" color="Black" caption="" width="333.928369140625" height="181.88437499999998" captionPos="5" scaleX="100" scaleY="100"/>
+</graph>

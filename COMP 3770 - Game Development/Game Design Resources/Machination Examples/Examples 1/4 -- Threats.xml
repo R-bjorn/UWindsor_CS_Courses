@@ -1,0 +1,17 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <node symbol="GroupBox" x="16" y="68" color="Black" caption="Threat Example" width="552.4272003173828" height="308.3946960449219" captionPos="5"/>
+  <node symbol="Pool" x="337" y="320" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="Gate" x="480" y="192" color="Black" caption="Evade" thickness="2" captionPos="0.75" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <connection type="State Connection" start="2" end="4" label="50%" position="-0.5" color="Black" thickness="2"/>
+  <node symbol="Drain" x="480" y="320" color="Black" caption="Threat Drain" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <connection type="Resource Connection" start="1" end="4" label="9" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Source" x="337" y="142" color="Black" caption="Threat Source" thickness="2" captionPos="0.75" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="Resource Connection" start="6" end="1" label="0" position="0.56" color="Black" thickness="2"/>
+  <connection type="State Connection" start="9" end="7" label="+2" position="-0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="200" y="239" color="Black" caption="Maze" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <connection type="Resource Connection" start="11" end="9" label="1/5" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="70" y="239" color="Black" caption="Ghost House" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Red" startingResources="4" maxResources="-1"/>
+  <node symbol="TextLabel" x="319" y="417" color="Black" caption="Ghost enters maze every 5th iteration"/>
+  <node symbol="TextLabel" x="344" y="448" color="Black" caption="Each ghost in the maze raise the rate at which threats are generated."/>
+  <node symbol="TextLabel" x="339" y="488" color="Black" caption="50% chance of evading and lowering the threat level."/>
+</graph>

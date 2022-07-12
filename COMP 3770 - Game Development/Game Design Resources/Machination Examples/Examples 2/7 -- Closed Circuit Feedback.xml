@@ -1,0 +1,17 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <connection type="Resource Connection" start="12" end="13" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="8" end="6" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="6" end="7" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="7" end="9" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="9" end="8" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="10" end="8" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="228" y="146" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="Pool" x="227" y="226" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="Pool" x="100" y="145" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="Pool" x="99" y="225" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="Source" x="98" y="77" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="onstart" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="State Connection" start="9" end="12" label="*" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Source" x="100" y="291" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Pool" x="228" y="288" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="GroupBox" x="43" y="44" color="Black" caption="Closed Circuit Feedback" width="225.733349609375" height="281.79271545410154" captionPos="5"/>
+</graph>
