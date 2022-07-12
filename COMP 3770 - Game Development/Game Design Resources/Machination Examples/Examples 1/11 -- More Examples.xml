@@ -1,0 +1,74 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <node symbol="TextLabel" x="308" y="27" color="Black" caption="Minimum number of clicks to move all resources to pool A?"/>
+  <node symbol="GroupBox" x="15" y="82" color="Black" caption="0)" width="185.93748931884764" height="146.46807556152345" captionPos="7"/>
+  <node symbol="Pool" x="167" y="169" color="Black" caption="A" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <connection type="Resource Connection" start="6" end="2" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="12" end="6" label="" position="-0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="2" end="12" label="*" position="0.5" color="Black" thickness="2">
+    <point x="166" y="108"/>
+    <point x="41" y="107"/>
+  </connection>
+  <node symbol="Gate" x="103" y="170" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <connection type="Resource Connection" start="11" end="9" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="13" end="11" label="" position="-0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="364" y="171" color="Black" caption="A" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="GroupBox" x="212" y="84" color="Black" caption="p)" width="185.93748931884764" height="146.46807556152345" captionPos="7"/>
+  <node symbol="Gate" x="299" y="209" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <node symbol="Pool" x="42" y="169" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="5" maxResources="-1" tokenLimit="0"/>
+  <node symbol="Pool" x="239" y="171" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="5" maxResources="-1" tokenLimit="0"/>
+  <node symbol="Gate" x="301" y="117" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <connection type="State Connection" start="11" end="14" label="*" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="13" end="14" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="14" end="9" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="20" end="26" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="27" end="20" label="" position="-0.5" color="Black" thickness="2"/>
+  <node symbol="Gate" x="494" y="212" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <connection type="Resource Connection" start="27" end="24" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="24" end="26" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="GroupBox" x="407" y="87" color="Black" caption="q)" width="185.93748931884764" height="146.46807556152345" captionPos="7"/>
+  <node symbol="Gate" x="496" y="120" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <connection type="State Connection" start="26" end="24" label=">1" position="0.5" color="Black" thickness="2">
+    <point x="560" y="120"/>
+  </connection>
+  <node symbol="Pool" x="559" y="174" color="Black" caption="A" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="Pool" x="434" y="174" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="5" maxResources="-1" tokenLimit="0"/>
+  <connection type="Resource Connection" start="30" end="34" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="35" end="30" label="" position="-0.5" color="Black" thickness="2"/>
+  <node symbol="Gate" x="103" y="406" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <connection type="Resource Connection" start="35" end="33" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="33" end="34" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Gate" x="105" y="314" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <node symbol="Pool" x="168" y="368" color="Black" caption="A" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="Pool" x="43" y="368" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="5" maxResources="-1" tokenLimit="0"/>
+  <node symbol="GroupBox" x="16" y="281" color="Black" caption="r)" width="185.93748931884764" height="146.46807556152345" captionPos="7"/>
+  <connection type="State Connection" start="35" end="33" label="==3" position="-0.6900000000000001" color="Black" thickness="2">
+    <point x="40" y="320"/>
+  </connection>
+  <connection type="Resource Connection" start="40" end="45" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="44" end="40" label="" position="-0.5" color="Black" thickness="2"/>
+  <node symbol="Gate" x="300" y="409" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <connection type="Resource Connection" start="44" end="43" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="43" end="45" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Gate" x="302" y="317" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <node symbol="Pool" x="240" y="371" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="5" maxResources="-1" tokenLimit="0"/>
+  <node symbol="Pool" x="365" y="371" color="Black" caption="A" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="GroupBox" x="213" y="284" color="Black" caption="s)" width="185.93748931884764" height="146.46807556152345" captionPos="7"/>
+  <connection type="State Connection" start="45" end="43" label="&lt;3" position="0.61" color="Black" thickness="2">
+    <point x="360" y="320"/>
+  </connection>
+  <connection type="Resource Connection" start="50" end="56" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="54" end="50" label="" position="-0.5" color="Black" thickness="2"/>
+  <node symbol="Gate" x="496" y="408" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <connection type="Resource Connection" start="54" end="53" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="53" end="56" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Gate" x="498" y="316" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <node symbol="Pool" x="436" y="370" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="5" maxResources="-1" tokenLimit="0"/>
+  <node symbol="GroupBox" x="409" y="283" color="Black" caption="s)" width="185.93748931884764" height="146.46807556152345" captionPos="7"/>
+  <node symbol="Pool" x="561" y="370" color="Black" caption="A" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <connection type="State Connection" start="54" end="53" label="&lt;5" position="-0.6900000000000001" color="Black" thickness="2">
+    <point x="432" y="316"/>
+  </connection>
+  <connection type="State Connection" start="56" end="53" label="&lt;4" position="0.61" color="Black" thickness="2">
+    <point x="560" y="320"/>
+  </connection>
+</graph>

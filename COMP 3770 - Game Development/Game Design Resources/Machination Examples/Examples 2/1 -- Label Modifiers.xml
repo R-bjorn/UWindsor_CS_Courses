@@ -1,0 +1,12 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <connection type="State Connection" start="6" end="2" label="+1m" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="8" end="2" label="+1i" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="4" end="5" label="2*50%/2" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="7" end="2" label="+1" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Source" x="98" y="238" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Pool" x="343" y="239" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="Register" x="101" y="100" color="Black" caption="Multiplier Modifier" thickness="2" captionPos="0.75" activationMode="interactive" pullMode="pull any" actions="0" min="-9999" max="9999" start="0" step="1"/>
+  <node symbol="Register" x="240" y="95" color="Black" caption="Flow Modifier" thickness="2" captionPos="0.75" activationMode="interactive" pullMode="pull any" actions="0" min="-9999" max="9999" start="0" step="1"/>
+  <node symbol="Register" x="380" y="100" color="Black" caption="Interval Modifier" thickness="2" captionPos="0.75" activationMode="interactive" pullMode="pull any" actions="0" min="-9999" max="9999" start="0" step="1"/>
+  <node symbol="GroupBox" x="21" y="40" color="Black" caption="Label Modifiers" width="428.9062026977539" height="242.55104980468752" captionPos="5"/>
+</graph>

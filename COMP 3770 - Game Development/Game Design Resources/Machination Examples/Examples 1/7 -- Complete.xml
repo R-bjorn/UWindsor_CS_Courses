@@ -1,0 +1,83 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="800" height="800" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <node symbol="Pool" x="410" y="308" color="Black" caption="Points" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="EndCondition" x="81" y="307" color="Black" caption="Level Complete" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <connection type="State Connection" start="5" end="1" label="==0" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="5" end="14" label="100%" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="5" end="3" label="+1%" position="-0.66" color="Black" thickness="2">
+    <point x="201" y="259"/>
+    <point x="251" y="260"/>
+  </connection>
+  <node symbol="Pool" x="203" y="308" color="Black" caption="Dots" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Gold" startingResources="50" maxResources="-1"/>
+  <node symbol="Converter" x="297" y="167" color="Black" caption="Eat Fruit" thickness="2" captionPos="0.75" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Drain" x="501" y="200" color="Black" caption="Remove Fruit" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1"/>
+  <node symbol="Source" x="503" y="109" color="Black" caption="Add Fruit" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="Resource Connection" start="8" end="12" label="1/20" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="12" end="7" label="1/5" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="12" end="6" label="50%" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="400" y="160" color="Black" caption="fruit" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <connection type="Resource Connection" start="14" end="0" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Converter" x="297" y="308" color="Black" caption="Eat Dot" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="Resource Connection" start="6" end="0" label="5" position="-0.44" color="Black" thickness="2"/>
+  <connection type="State Connection" start="36" end="21" label="50%" position="-0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="33" end="21" label="9" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="53" end="20" label="+2" position="-0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="54" end="53" label="1/5" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="48" end="33" label="0" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Drain" x="728" y="540" color="Black" caption="Threat Drain" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <connection type="Resource Connection" start="53" end="54" label="all" position="0.5" color="Black" thickness="2">
+    <point x="439" y="625"/>
+    <point x="344" y="624"/>
+  </connection>
+  <node symbol="EndCondition" x="82" y="747" color="Black" caption="Game Over" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Pool" x="158" y="749" color="Black" caption="Lives" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="3" maxResources="-1"/>
+  <connection type="Resource Connection" start="24" end="32" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="37" end="32" label="*" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="37" end="22" label="*" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="33" end="37" label=">100" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="33" end="38" label="all" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="37" end="38" label="*" position="0.5" color="Black" thickness="2">
+    <point x="427" y="747"/>
+  </connection>
+  <connection type="State Connection" start="24" end="23" label="==0" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Drain" x="236" y="749" color="Black" caption="Die" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Pool" x="587" y="543" color="Black" caption="Threats" thickness="2" captionPos="0.88" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="GroupBox" x="16" y="68" color="Black" caption="Power Pills Example" width="764.135498046875" height="724.7201171875" captionPos="5"/>
+  <connection type="Resource Connection" start="51" end="0" label="5" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Gate" x="729" y="465" color="Black" caption="Evade" thickness="2" captionPos="0.75" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <node symbol="Gate" x="430" y="745" color="Black" caption="Reset" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <node symbol="Drain" x="738" y="749" color="Black" caption="Clear Threats" thickness="2" captionPos="0.93" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Drain" x="587" y="678" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1"/>
+  <connection type="Resource Connection" start="33" end="39" label="5" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="56" y="426" color="Black" caption="Power Pills" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Yellow" startingResources="4" maxResources="-1"/>
+  <connection type="Resource Connection" start="41" end="44" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="44" end="58" label="12" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Converter" x="146" y="427" color="Black" caption="Eat Pill" thickness="2" captionPos="0.75" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="Resource Connection" start="58" end="46" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Drain" x="131" y="611" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1"/>
+  <connection type="State Connection" start="-1" end="48" label="==0" position="0.5" color="Black" thickness="2">
+    <point x="227" y="466"/>
+    <point x="265" y="389"/>
+    <point x="520" y="390"/>
+  </connection>
+  <node symbol="Source" x="586" y="466" color="Black" caption="Threat Source" thickness="2" captionPos="0.82" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Gate" x="385" y="464" color="Black" caption="Eat Ghost" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <connection type="State Connection" start="49" end="51" label="*" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Source" x="504" y="337" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="Resource Connection" start="53" end="49" label="50%" position="0.5" color="Black" thickness="2">
+    <point x="440" y="466"/>
+  </connection>
+  <node symbol="Pool" x="440" y="560" color="Black" caption="Maze" thickness="2" captionPos="0.15" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="Pool" x="343" y="558" color="Black" caption="Ghost House" thickness="2" captionPos="0.35" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Red" startingResources="4" maxResources="-1"/>
+  <connection type="Resource Connection" start="49" end="54" label="" position="0.5" color="Black" thickness="2">
+    <point x="344" y="466"/>
+  </connection>
+  <connection type="State Connection" start="58" end="49" label=">0" position="0.5" color="Black" thickness="2">
+    <point x="304" y="429"/>
+    <point x="360" y="430"/>
+  </connection>
+  <connection type="State Connection" start="58" end="39" label=">0" position="0.5" color="Black" thickness="2">
+    <point x="231" y="692"/>
+    <point x="542" y="709"/>
+  </connection>
+  <node symbol="Pool" x="231" y="490" color="Black" caption="Power Up Time" thickness="2" captionPos="0.43" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+</graph>

@@ -1,0 +1,28 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <connection type="Resource Connection" start="4" end="1" label="3" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Converter" x="183" y="82" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="Resource Connection" start="24" end="3" label="5" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="344" y="82" color="Black" caption="Soldiers" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="Pool" x="98" y="79" color="Black" caption="Gold" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Gold" startingResources="12" maxResources="-1"/>
+  <connection type="Resource Connection" start="1" end="24" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="9" end="11" label="3" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="25" end="8" label="5" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="345" y="244" color="Black" caption="Soldiers" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="Pool" x="99" y="241" color="Black" caption="Gold" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Gold" startingResources="12" maxResources="-1"/>
+  <connection type="Resource Connection" start="11" end="25" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Converter" x="184" y="244" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="GroupBox" x="56" y="29" color="Black" caption="Delay Each Resource by Five Time Steps" width="344.9025512695312" height="108.44749755859374" captionPos="5"/>
+  <node symbol="GroupBox" x="57" y="191" color="Black" caption="Queue Inputs and Release One Every Five Time Steps" width="344.9025512695312" height="108.44749755859374" captionPos="5"/>
+  <connection type="Resource Connection" start="16" end="17" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="17" end="18" label="10" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="97" y="398" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="4" maxResources="-1"/>
+  <node symbol="Delay" x="175" y="400" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" delayType="normal"/>
+  <node symbol="Drain" x="264" y="400" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <connection type="State Connection" start="17" end="21" label=">0" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="21" end="22" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Source" x="175" y="482" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Pool" x="265" y="482" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="GroupBox" x="56" y="360" color="Black" caption="Delay Activated Effect" width="264.3436645507812" height="160" captionPos="5"/>
+  <node symbol="Delay" x="263" y="81" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" delayType="normal"/>
+  <node symbol="Delay" x="264" y="243" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" delayType="queue"/>
+</graph>

@@ -1,0 +1,32 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <connection type="State Connection" start="5" end="7" label="50%" position="-0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="24" end="7" label="9" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Source" x="339" y="86" color="Black" caption="Threat Source" thickness="2" captionPos="0.75" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="State Connection" start="9" end="6" label="+2" position="-0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="21" end="9" label="1/5" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Gate" x="482" y="85" color="Black" caption="Evade" thickness="2" captionPos="0.75" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <connection type="Resource Connection" start="2" end="24" label="0" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Drain" x="481" y="160" color="Black" caption="Threat Drain" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="GroupBox" x="22" y="30" color="Black" caption="Capture Example" width="539.6199020385742" height="495.2606796264648" captionPos="5"/>
+  <node symbol="Pool" x="257" y="123" color="Black" caption="Maze" thickness="2" captionPos="0.75" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <connection type="Resource Connection" start="9" end="21" label="all" position="0.5" color="Black" thickness="2">
+    <point x="256" y="188"/>
+    <point x="161" y="187"/>
+  </connection>
+  <node symbol="EndCondition" x="68" y="360" color="Black" caption="Game Over" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Pool" x="144" y="362" color="Black" caption="Lives" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="3" maxResources="-1"/>
+  <connection type="Resource Connection" start="12" end="22" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="16" end="22" label="*" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="16" end="10" label="*" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Gate" x="301" y="360" color="Black" caption="Reset" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <connection type="State Connection" start="24" end="16" label=">100" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="24" end="23" label="all" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="16" end="23" label="*" position="0.5" color="Black" thickness="2">
+    <point x="413" y="360"/>
+  </connection>
+  <connection type="State Connection" start="12" end="11" label="==0" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="160" y="121" color="Black" caption="Ghost House" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Red" startingResources="4" maxResources="-1"/>
+  <node symbol="Drain" x="222" y="362" color="Black" caption="Die" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Drain" x="414" y="315" color="Black" caption="Clear Threats" thickness="2" captionPos="0.93" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Pool" x="340" y="163" color="Black" caption="Threats" thickness="2" captionPos="0.88" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+</graph>

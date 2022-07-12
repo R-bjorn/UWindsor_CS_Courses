@@ -1,0 +1,50 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="1">
+  <node symbol="Source" x="92" y="137" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Pool" x="303" y="137" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="Gate" x="200" y="138" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" gateType="dice"/>
+  <connection type="Resource Connection" start="0" end="2" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="1" end="6" label="" position="0.5" color="Blue" thickness="2">
+    <point x="334" y="58"/>
+    <point x="440" y="56"/>
+  </connection>
+  <connection type="State Connection" start="1" end="6" label="" position="0.5" color="Red" thickness="2">
+    <point x="340" y="280"/>
+    <point x="451" y="280"/>
+  </connection>
+  <node symbol="Chart" x="360" y="80" color="Red" caption="" width="200" height="160" captionPos="5" scaleX="0" scaleY="0"/>
+  <connection type="Resource Connection" start="2" end="1" label="2" position="0.5" color="Blue" thickness="2">
+    <point x="240" y="80"/>
+    <point x="280" y="80"/>
+  </connection>
+  <connection type="Resource Connection" start="2" end="1" label="7" position="-0.5" color="Red" thickness="2">
+    <point x="240" y="200"/>
+    <point x="280" y="200"/>
+  </connection>
+  <node symbol="GroupBox" x="25" y="48" color="Red" caption="Random Resource Production" width="564.3859573364257" height="218.60283813476562" captionPos="5"/>
+  <connection type="Resource Connection" start="20" end="12" label="3" position="0.5" color="Black" thickness="2">
+    <point x="95" y="320"/>
+  </connection>
+  <connection type="Resource Connection" start="20" end="13" label="5" position="0.5" color="Black" thickness="2">
+    <point x="72" y="480"/>
+  </connection>
+  <node symbol="Converter" x="146" y="320" color="Black" caption="Build Soldier" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Converter" x="136" y="480" color="Black" caption="Build knight" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Delay" x="240" y="410" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" delayType="queue"/>
+  <connection type="Resource Connection" start="12" end="14" label="" position="0.5" color="Blue" thickness="2">
+    <point x="240" y="320"/>
+  </connection>
+  <connection type="Resource Connection" start="13" end="14" label="" position="0.5" color="Red" thickness="2">
+    <point x="240" y="480"/>
+  </connection>
+  <node symbol="Pool" x="320" y="400" color="Red" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <connection type="Resource Connection" start="14" end="17" label="5" position="0.5" color="Blue" thickness="2">
+    <point x="288" y="342"/>
+    <point x="320" y="344"/>
+  </connection>
+  <connection type="Resource Connection" start="14" end="17" label="10" position="0.5" color="Red" thickness="2">
+    <point x="280" y="465"/>
+    <point x="320" y="468"/>
+  </connection>
+  <node symbol="Pool" x="54" y="387" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Gold" startingResources="20" maxResources="-1"/>
+  <node symbol="GroupBox" x="26" y="295" color="Black" caption="Colour Coded Delay" width="346.47027587890625" height="246.7821044921875" captionPos="5"/>
+</graph>

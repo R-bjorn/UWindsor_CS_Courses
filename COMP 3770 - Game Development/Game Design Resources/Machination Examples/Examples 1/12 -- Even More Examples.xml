@@ -1,0 +1,43 @@
+<graph version="v4.03" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="600" height="560" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <node symbol="TextLabel" x="308" y="27" color="Black" caption="Minimum number of clicks needed to win?"/>
+  <node symbol="Source" x="40" y="137" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Source" x="45" y="240" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="Resource Connection" start="2" end="17" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="GroupBox" x="15" y="82" color="Black" caption="u)" width="230.4687271118164" height="209.44681091308593" captionPos="7"/>
+  <connection type="State Connection" start="16" end="9" label=">10" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="1" end="16" label="0" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="17" end="6" label="+1" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="15" end="13" label=">10" position="0.5" color="Black" thickness="2"/>
+  <node symbol="EndCondition" x="226" y="135" color="Black" caption="win" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Pool" x="321" y="142" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="12" maxResources="-1" tokenLimit="0"/>
+  <node symbol="Converter" x="399" y="145" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="Resource Connection" start="10" end="11" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="EndCondition" x="544" y="143" color="Black" caption="win" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <connection type="Resource Connection" start="11" end="15" label="3" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="472" y="145" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="Pool" x="156" y="133" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="Pool" x="114" y="240" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="GroupBox" x="280" y="85" color="Black" caption="v)" width="280.7875015258789" height="206.9127685546875" captionPos="7"/>
+  <node symbol="Source" x="47" y="469" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="Resource Connection" start="19" end="26" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="25" end="24" label=">10" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="28" end="25" label="0" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="26" end="22" label="+1" position="0.5" color="Black" thickness="2"/>
+  <node symbol="EndCondition" x="228" y="364" color="Black" caption="win" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Pool" x="158" y="362" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="Pool" x="116" y="469" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="GroupBox" x="17" y="311" color="Black" caption="w)" width="230.4687271118164" height="209.44681091308593" captionPos="7"/>
+  <node symbol="Source" x="42" y="366" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="State Connection" start="33" end="32" label=">10" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="320" y="369" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="12" maxResources="-1" tokenLimit="0"/>
+  <connection type="Resource Connection" start="30" end="40" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="EndCondition" x="543" y="370" color="Black" caption="win" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Pool" x="471" y="372" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1" tokenLimit="0"/>
+  <node symbol="GroupBox" x="279" y="312" color="Black" caption="x)" width="280.7875015258789" height="206.9127685546875" captionPos="7"/>
+  <node symbol="Drain" x="520" y="454" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1"/>
+  <connection type="Resource Connection" start="37" end="35" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="427" y="457" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="4" maxResources="-1" tokenLimit="0"/>
+  <connection type="State Connection" start="37" end="39" label="+1" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="40" end="33" label="2" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Converter" x="398" y="372" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+</graph>

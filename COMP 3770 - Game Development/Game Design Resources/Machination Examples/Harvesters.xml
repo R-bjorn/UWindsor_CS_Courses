@@ -1,0 +1,42 @@
+<graph version="v4.03" name="Harvesting" author="Scott Goodwin" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="1200" height="1120" numberOfRuns="10" visibleRuns="25" colorCoding="1">
+  <connection type="State Connection" start="1" end="8" label=">=30" position="0.5" color="Blue" thickness="2"/>
+  <node symbol="Pool" x="261" y="102" color="Blue" caption="Dreams" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <connection type="Resource Connection" start="1" end="4" label="3" position="-0.5" color="Blue" thickness="2"/>
+  <connection type="Resource Connection" start="4" end="7" label="" position="0.5" color="Blue" thickness="2"/>
+  <node symbol="Converter" x="260" y="221" color="Blue" caption="Invest" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull all" actions="1" resourceColor="Black"/>
+  <connection type="State Connection" start="7" end="22" label="+10%" position="-0.5" color="Blue" thickness="2"/>
+  <connection type="State Connection" start="1" end="33" label="" position="0.5" color="Blue" thickness="2"/>
+  <node symbol="Pool" x="179" y="220" color="Blue" caption="Sandmen" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="EndCondition" x="380" y="102" color="Blue" caption="Blue Wins" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="GroupBox" x="138" y="40" color="Blue" caption="Original" width="168.06418457031248" height="226.854296875" captionPos="5"/>
+  <connection type="State Connection" start="11" end="25" label=">=30" position="0.5" color="Red" thickness="2"/>
+  <node symbol="Pool" x="261" y="462" color="Red" caption="Dreams" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <connection type="Resource Connection" start="11" end="14" label="3" position="-0.5" color="Red" thickness="2"/>
+  <connection type="Resource Connection" start="14" end="18" label="" position="0.5" color="Red" thickness="2"/>
+  <node symbol="Converter" x="260" y="581" color="Red" caption="Invest" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull all" actions="1" resourceColor="Black"/>
+  <node symbol="Source" x="99" y="464" color="Red" caption="Field of Dreams" thickness="2" captionPos="0.75" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="Resource Connection" start="15" end="11" label="10%" position="0.5" color="Red" thickness="2"/>
+  <connection type="State Connection" start="18" end="16" label="+10%" position="-0.5" color="Red" thickness="2"/>
+  <node symbol="Pool" x="179" y="580" color="Red" caption="Sandmen" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <node symbol="GroupBox" x="138" y="400" color="Red" caption="Original" width="168.06418457031248" height="226.854296875" captionPos="5"/>
+  <connection type="State Connection" start="11" end="39" label="" position="0.5" color="Red" thickness="2"/>
+  <node symbol="Source" x="99" y="104" color="Blue" caption="Field of Dreams" thickness="2" captionPos="0.75" activationMode="automatic" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="Resource Connection" start="21" end="1" label="10%" position="0.5" color="Blue" thickness="2"/>
+  <connection type="State Connection" start="7" end="33" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="18" end="39" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="EndCondition" x="380" y="462" color="Red" caption="Red Wins" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Chart" x="880" y="240" color="Black" caption="Comparison" width="280" height="280" captionPos="5" scaleX="150" scaleY="30"/>
+  <connection type="State Connection" start="11" end="26" label="" position="0.5" color="Red" thickness="2"/>
+  <connection type="State Connection" start="1" end="26" label="" position="0.5" color="Blue" thickness="2"/>
+  <node symbol="ArtificialPlayer" x="271" y="674" color="Red" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="0" actionsPerTurn="1">if (Sandmen &lt; MaxSandmen) Fire(Invest)</node>
+  <connection type="Resource Connection" start="34" end="31" label="" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="99" y="343" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" maxResources="-1"/>
+  <connection type="State Connection" start="31" end="15" label=">0" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Chart" x="480" y="80" color="Blue" caption="Harvesting with Heavy Investment" width="320" height="240" captionPos="5" scaleX="150" scaleY="30"/>
+  <node symbol="Source" x="31" y="345" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="State Connection" start="31" end="21" label=">0" position="-0.5" color="Black" thickness="2"/>
+  <node symbol="Register" x="179" y="301" color="Blue" caption="MaxSandmen" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="0" min="-9999" max="9999" start="10" step="1"/>
+  <node symbol="Register" x="182" y="666" color="Red" caption="MaxSandmen" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="0" min="-9999" max="9999" start="0" step="1"/>
+  <node symbol="ArtificialPlayer" x="275" y="307" color="Blue" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="0" actionsPerTurn="1">if (Sandmen &lt; MaxSandmen) Fire(Invest)</node>
+  <node symbol="Chart" x="480" y="440" color="Red" caption="Harvesting with Low Investment" width="320" height="240" captionPos="5" scaleX="150" scaleY="30"/>
+</graph>
